@@ -129,7 +129,50 @@ Ajoutez les scripts suivants dans votre fichier `package.json` pour formater et 
    import './App.scss';
    ```
 
-### 7. Préparer le déploiement sur Vercel
+### 7. Créer un fichier .gitignore
+
+```gitignore
+# Node modules
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE-specific files
+.vscode/
+.idea/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Prettier config
+.prettierignore
+
+# ESLint config
+.eslintignore
+
+# Miscellaneous
+*.sublime-workspace
+*.sublime-project
+
+# Test coverage
+coverage/
+*.lcov
+```
+
+### 8. Préparer le déploiement sur Vercel
 
 1. **Initialiser un dépôt Git :**
 
@@ -139,18 +182,12 @@ Ajoutez les scripts suivants dans votre fichier `package.json` pour formater et 
    git init
    git add .
    git commit -m "Initial commit"
+   git branch -M main
+   git remote add origin git@github.com:NicolasChambon/my-react-project.git
+   git push -u origin main
    ```
 
-2. **Créer un dépôt distant (GitHub, GitLab, etc.) :**
-
-   Crée un nouveau dépôt sur GitHub (ou autre) et ajoute le dépôt distant à ton projet :
-
-   ```bash
-   git remote add origin <URL-du-dépôt>
-   git push -u origin master
-   ```
-
-3. **Déployer sur Vercel :**
+2. **Déployer sur Vercel :**
 
    - Va sur [Vercel](https://vercel.com/) et connecte-toi avec ton compte GitHub (ou autre).
    - Crée un nouveau projet et choisis le dépôt Git que tu viens de créer.
