@@ -1,0 +1,39 @@
+@use '../../../styles/variables' as v;
+
+.Header {
+  background-color: v.$backgroundColor;
+  border-bottom: 1px solid v.$backgroundColor;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  &-wrapper {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    height: 4rem;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1350px;
+    padding: 0.5rem 2rem;
+    position: relative;
+
+    &-logoContainer {
+      align-items: center;
+      display: flex;
+      gap: 0.5rem;
+      height: 100%;
+
+      &-logo {
+        height: 100%;
+      }
+
+      &-title {
+        color: v.$darkColor;
+        font-family: v.$titleFont;
+        font-size: 1rem;
+        font-weight: 600;
+      }
+    }
+  }
+}

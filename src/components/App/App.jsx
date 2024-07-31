@@ -1,10 +1,12 @@
+import Header from '../organisms/Header/Header';
+
 import './App.scss';
 
 const App = () => {
   return (
-    <div className="App">
-      <h1>NC Portfolio </h1>
-    </div>
+    <>
+      <Header />
+    </>
   );
 };
 
