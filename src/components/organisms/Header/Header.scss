@@ -35,5 +35,40 @@
         font-weight: 600;
       }
     }
+
+    &-nav-list {
+      display: flex;
+      gap: 4rem;
+
+      &-item {
+        color: v.$darkColor;
+        font-family: v.$titleFont;
+        font-size: 1rem;
+        font-weight: 600;
+
+        &-link {
+          padding: 1.3rem 0.5rem;
+
+          position: relative;
+          &::after {
+            background-color: v.$lightColor;
+            content: '';
+            height: 3px;
+            left: 0;
+            position: absolute;
+            top: 97%;
+            transition: width 0.3s;
+            width: 0;
+          }
+          &:hover::after {
+            width: 100%;
+          }
+          &.selected::after {
+            width: 100%;
+            background-color: v.$darkColor;
+          }
+        }
+      }
+    }
   }
 }
