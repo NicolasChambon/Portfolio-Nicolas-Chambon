@@ -1,0 +1,39 @@
+@use '../../../../styles/variables' as v;
+
+.HeaderMenu {
+  background-color: v.$backgroundColor;
+  border: 1px solid v.$backgroundColor;
+  border-radius: v.$borderRadius;
+  padding: 0.25rem 0;
+  position: absolute;
+  right: 0.25rem;
+  top: 4.25rem;
+
+  &-list {
+    display: flex;
+    flex-direction: column;
+
+    &-item {
+      color: v.$darkColor;
+      font-family: v.$titleFont;
+      font-size: 1rem;
+      font-weight: 600;
+      padding: 1rem 0rem;
+
+      &:hover {
+        background-color: v.$backgroundColorDark;
+        transition: all 0.3s;
+      }
+      transition: all 0.3s;
+
+      &.selected {
+        background-color: v.$backgroundColorDark;
+      }
+
+      &-link {
+        color: v.$darkColor;
+        padding: 0.8rem 3rem;
+      }
+    }
+  }
+}
