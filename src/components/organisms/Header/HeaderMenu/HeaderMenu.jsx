@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import './HeaderMenu.scss';
 
@@ -7,7 +7,7 @@ const HeaderMenu = () => {
     <nav className="HeaderMenu">
       <ul className="HeaderMenu-list">
         <li className="HeaderMenu-list-item">
-          <Link
+          <NavLink
             className="HeaderMenu-list-item-link"
             to="/resume"
             onClick={() => {
@@ -17,10 +17,10 @@ const HeaderMenu = () => {
             }}
           >
             Resume
-          </Link>
+          </NavLink>
         </li>
         <li className="HeaderMenu-list-item">
-          <Link
+          <NavLink
             className="HeaderMenu-list-item-link"
             to="/projects"
             onClick={() => {
@@ -30,7 +30,7 @@ const HeaderMenu = () => {
             }}
           >
             Projects
-          </Link>
+          </NavLink>
         </li>
       </ul>
     </nav>

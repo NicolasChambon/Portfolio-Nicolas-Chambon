@@ -32,7 +32,7 @@
         &:hover::after {
           width: 100%;
         }
-        &.selected::after {
+        &.active::after {
           width: 100%;
           background-color: v.$darkColor;
         }

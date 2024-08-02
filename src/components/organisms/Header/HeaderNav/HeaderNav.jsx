@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import './HeaderNav.scss';
 
@@ -7,8 +7,9 @@ const HeaderNav = () => {
     <nav className="HeaderNav">
       <ul className="HeaderNav-list">
         <li className="HeaderNav-list-item">
-          <Link
+          <NavLink
             className="HeaderNav-list-item-link"
+            activeClassName="HeaderNav-list-item-link active"
             to="/resume"
             onClick={() => {
               if (window.location.pathname === '/resume') {
@@ -17,11 +18,12 @@ const HeaderNav = () => {
             }}
           >
             Resume
-          </Link>
+          </NavLink>
         </li>
         <li className="HeaderNav-list-item">
-          <Link
+          <NavLink
             className="HeaderNav-list-item-link"
+            activeClassName="HeaderNav-list-item-link active"
             to="/projects"
             onClick={() => {
               if (window.location.pathname === '/projects') {
@@ -30,7 +32,7 @@ const HeaderNav = () => {
             }}
           >
             Projects
-          </Link>
+          </NavLink>
         </li>
       </ul>
     </nav>
