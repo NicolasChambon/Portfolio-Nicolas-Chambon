@@ -5,3 +5,19 @@ body {
   font-family: v.$mainFont;
   font-size: v.$textSize;
 }
+
+h1 {
+  font-family: v.$titleFont;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: v.$titleFont;
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+
+p {
+  line-height: 2ch;
+}
