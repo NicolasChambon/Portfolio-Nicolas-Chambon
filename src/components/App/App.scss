@@ -8,22 +8,4 @@
     overflow: auto;
     position: fixed;
   }
-
-  &-credits {
-    bottom: 5.5rem;
-    font-size: 0.75rem;
-    position: fixed;
-    right: -4.25rem;
-    rotate: 270deg;
-
-    &-link {
-      color: v.$backgroundColorDark;
-
-      &:hover {
-        color: v.$backgroundColor;
-        transition: all 0.3s;
-      }
-      transition: all 0.3s;
-    }
-  }
 }

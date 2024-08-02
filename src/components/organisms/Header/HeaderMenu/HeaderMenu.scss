@@ -4,9 +4,10 @@
   background-color: v.$backgroundColor;
   border: 1px solid v.$backgroundColor;
   border-radius: v.$borderRadius;
+  box-shadow: -1rem 2rem 6rem rgb(90, 90, 90);
   padding: 0.25rem 0;
   position: absolute;
-  right: 0.25rem;
+  right: 0.5rem;
   top: 4.25rem;
 
   &-list {
