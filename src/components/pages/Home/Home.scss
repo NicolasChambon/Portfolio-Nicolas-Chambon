@@ -8,6 +8,10 @@
   padding-top: 7rem;
   text-shadow: 0 0 0.5rem black;
 
+  @media (max-width: 810px) {
+    padding-top: 2rem;
+  }
+
   &-logo {
     align-items: center;
     display: flex;
@@ -17,9 +21,25 @@
     gap: 1rem;
     margin-bottom: 6rem;
 
+    @media (max-width: 810px) {
+      flex-direction: column;
+      margin-bottom: 4rem;
+    }
+
+    @media (max-width: 625px) {
+      margin-bottom: 3rem;
+    }
+
     &-svg {
       filter: drop-shadow(0 0 0.5rem black);
       height: 7.5rem;
+    }
+
+    &-text {
+      width: 98%;
+      @media (max-width: 810px) {
+        text-align: center;
+      }
     }
   }
 
@@ -31,7 +51,12 @@
     text-align: justify;
     width: 50%;
 
+    @media (max-width: 1168px) {
+      width: 75%;
+    }
+
     &.last {
+      padding-bottom: 1rem;
       text-align: right;
     }
   }
