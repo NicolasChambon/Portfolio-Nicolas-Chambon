@@ -14,8 +14,8 @@ const Home = () => {
       </div>
       <p className="Home-description">Hello and welcome to my portfolio !</p>
       <p className="Home-description">
-        My name is Nicolas Chambon, and I am a passionate Fullstack Web
-        Developer. With a unique background in sport biomechanics and product
+        My name is Nicolas Chambon, I am 37 and I am a passionate Fullstack Web
+        Developer with a unique background in sport biomechanics and product
         engineering. Today, I bring a diverse skill set and a dedication to
         creating innovative and efficient web solutions.
       </p>

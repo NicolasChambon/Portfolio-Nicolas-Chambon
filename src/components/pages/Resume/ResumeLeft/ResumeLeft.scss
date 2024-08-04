@@ -1,0 +1,37 @@
+@use '../../../../styles/variables' as v;
+
+.ResumeLeft {
+  align-items: center;
+  background-color: v.$backgroundColorT;
+  border-right: 2px solid v.$darkColor;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem 2rem 1rem;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    background-color: v.$darkColor;
+  }
+
+  &-picture {
+    border: 2px solid v.$darkColor;
+    border-radius: 50%;
+    height: 5rem;
+    margin: 0 auto 2rem auto;
+    overflow: hidden;
+    z-index: 1;
+
+    &-img {
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+}
