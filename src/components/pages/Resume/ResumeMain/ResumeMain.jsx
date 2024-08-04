@@ -1,4 +1,5 @@
 import ResumeTraining from './ResumeTraining/ResumeTraining';
+import ResumeExperiences from './ResumeExperiences/ResumeExperiences';
 
 import './ResumeMain.scss';
 
@@ -6,7 +7,7 @@ const ResumeMain = () => {
   return (
     <div className="ResumeMain">
       <ResumeTraining />
-      <ResumeTraining />
+      <ResumeExperiences />
     </div>
   );
 };
