@@ -1,37 +1,13 @@
-import ResumeLeft from './ResumeLeft/ResumeLeft';
+import ResumeNav from './ResumeNav/ResumeNav';
+import ResumeMain from './ResumeMain/ResumeMain';
 
 import './Resume.scss';
 
 const Resume = () => {
   return (
     <main className="Resume">
-      <ResumeLeft />
-      <div className="Resume-right">
-        <p>
-          Right part Right part Right part Right part Right part Right part
-          Right part
-        </p>
-        <p>
-          Right part Right part Right part Right part Right part Right part
-          Right part
-        </p>
-        <p>
-          Right part Right part Right part Right part Right part Right part
-          Right part
-        </p>
-        <p>
-          Right part Right part Right part Right part Right part Right part
-          Right part
-        </p>
-        <p>
-          Right part Right part Right part Right part Right part Right part
-          Right part
-        </p>
-        <p>
-          Right part Right part Right part Right part Right part Right part
-          Right part
-        </p>
-      </div>
+      <ResumeNav />
+      <ResumeMain />
     </main>
   );
 };

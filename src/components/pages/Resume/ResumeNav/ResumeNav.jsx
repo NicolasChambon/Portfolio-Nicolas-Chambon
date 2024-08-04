@@ -10,56 +10,58 @@ import languagesIcon from '../../../../assets/languages-icon.svg';
 import skillsIcon from '../../../../assets/skills-icon.svg';
 import pdfIcon from '../../../../assets/pdf-icon.svg';
 
-import './ResumeLeft.scss';
+import './ResumeNav.scss';
 
-const ResumeLeft = () => {
+const ResumeNav = () => {
   return (
-    <div className="ResumeLeft">
-      <div className="ResumeLeft-picture">
+    <div className="ResumeNav">
+      <div className="ResumeNav-picture">
         <img
-          className="ResumeLeft-picture-img"
+          className="ResumeNav-picture-img"
           src={profilePicture}
           alt="Nicolas Chambon"
         />
       </div>
       <ResumeBtn
-        className="ResumeLeft-btnTraining"
+        className="ResumeNav-btnTraining"
         title="training"
         icon={trainingIcon}
       />
       <ResumeBtn
-        className="ResumeLeft-btnExperiences"
+        className="ResumeNav-btnExperiences"
         title="experiences"
         icon={experiencesIcon}
       />
       <ResumeBtn
-        className="ResumeLeft-btnPublications"
+        className="ResumeNav-btnPublications"
         title="publications"
         icon={publicationsIcon}
       />
       <ResumeBtn
-        className="ResumeLeft-btnInterests"
+        className="ResumeNav-btnInterests"
         title="interests"
         icon={interestsIcon}
       />
       <ResumeBtn
-        className="ResumeLeft-btnPeopleSkills"
+        className="ResumeNav-btnPeopleSkills"
         title="peopleSkills"
         icon={peopleSkillsIcon}
       />
       <ResumeBtn
-        className="ResumeLeft-btnLanguages"
+        className="ResumeNav-btnLanguages"
         title="languages"
         icon={languagesIcon}
       />
       <ResumeBtn
-        className="ResumeLeft-btnSkills"
+        className="ResumeNav-btnSkills"
         title="skills"
         icon={skillsIcon}
       />
-      <ResumeBtn className="ResumeLeft-btnPdf" title="pdf" icon={pdfIcon} />
+      <div className="ResumeNav-pdfIcon">
+        <img className="ResumeNav-pdfIcon-icon" src={pdfIcon} alt="pdf icon" />
+      </div>
     </div>
   );
 };
 
-export default ResumeLeft;
+export default ResumeNav;

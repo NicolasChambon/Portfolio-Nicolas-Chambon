@@ -5,9 +5,9 @@
     background-color: v.$backgroundColor;
     border-radius: 50%;
     border: 2px solid v.$darkColor;
-    margin-bottom: calc(100vh / 22);
+    margin-bottom: calc(100vh / 30);
     position: relative;
-    width: 2.5rem;
+    width: 2.25rem;
 
     &:hover {
       transform: scale(1.1);
