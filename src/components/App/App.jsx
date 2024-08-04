@@ -4,6 +4,7 @@ import Header from '../organisms/Header/Header';
 import Home from '../pages/Home/Home';
 import Resume from '../pages/Resume/Resume';
 import Projects from '../pages/Projects/Projects';
+import Contact from '../pages/Contact/Contact';
 import Credits from '../organisms/Credits/Credits';
 
 import './App.scss';
@@ -17,6 +18,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
       <Credits />

@@ -32,6 +32,19 @@ const HeaderMenu = () => {
             Projects
           </NavLink>
         </li>
+        <li className="HeaderMenu-list-item">
+          <NavLink
+            className="HeaderMenu-list-item-link"
+            to="/contact"
+            onClick={() => {
+              if (window.location.pathname === '/contact') {
+                window.scrollTo(0, 0);
+              }
+            }}
+          >
+            Contact
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );
