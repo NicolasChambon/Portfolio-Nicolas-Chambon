@@ -4,4 +4,26 @@
   margin: auto;
   padding: 2rem 2rem 2rem 8rem;
   width: 100%;
+
+  @media (min-width: 1370px) {
+    max-width: 1350px;
+    padding-right: 6rem;
+  }
+
+  @media (max-width: 500px) {
+    & li,
+    & p {
+      font-size: 0.8rem;
+    }
+  }
+
+  @media (max-width: 435px) {
+    padding: 2rem 1rem 2rem 5rem;
+  }
+
+  @media (max-width: 370px) {
+    & h3 {
+      font-size: 1.5rem;
+    }
+  }
 }

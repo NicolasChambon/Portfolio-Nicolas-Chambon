@@ -59,7 +59,7 @@ const ResumeExperiences = () => {
           </li>
           <li className="ResumeExperiences-item-description-li">
             - Responsible for the fourfold aspects of
-            cost/quality/timelines/environmental impact
+            cost-quality-timelines-environmental impact
           </li>
           <li className="ResumeExperiences-item-description-li">
             - Design, development, and industrialization (in Asia) of sports

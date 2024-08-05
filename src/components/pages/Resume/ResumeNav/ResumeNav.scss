@@ -29,6 +29,10 @@
     overflow: hidden;
     z-index: 1;
 
+    @media (max-width: 435px) {
+      height: 3rem;
+    }
+
     &-img,
     &-icon {
       height: 100%;

@@ -31,6 +31,17 @@
       padding-left: 2rem;
 
       &-article {
+        border-left: 2px solid v.$lightColor;
+        padding-left: 1rem;
+
+        & p {
+          margin-bottom: 0.5rem;
+        }
+
+        &-authors {
+          font-style: italic;
+        }
+
         &-journal {
           color: v.$darkColor;
           font-weight: 500;
