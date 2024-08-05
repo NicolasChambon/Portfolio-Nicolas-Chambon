@@ -4,7 +4,7 @@ import './ResumeExperiences.scss';
 
 const ResumeExperiences = () => {
   return (
-    <div className="ResumeExperiences">
+    <div className="ResumeExperiences" id="experiences">
       <div className="ResumeExperiences-title">
         <img
           className="ResumeExperiences-title-icon"

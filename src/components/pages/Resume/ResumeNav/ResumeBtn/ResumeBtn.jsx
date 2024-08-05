@@ -1,10 +1,10 @@
 import './ResumeBtn.scss';
 
-const ResumeBtn = ({ title, icon }) => {
+const ResumeBtn = ({ title, icon, label }) => {
   return (
-    <div className="ResumeBtn">
+    <a className="ResumeBtn" href={`#${title}`} title={label}>
       <img className="ResumeBtn-icon" src={icon} alt={`${title}-icon`} />
-    </div>
+    </a>
   );
 };
 

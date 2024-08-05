@@ -44,6 +44,8 @@
 
         &-journal {
           color: v.$darkColor;
+          display: flex;
+          gap: 0.5rem;
           font-weight: 500;
 
           &:hover {

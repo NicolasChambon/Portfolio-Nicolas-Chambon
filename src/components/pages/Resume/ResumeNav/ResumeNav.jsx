@@ -26,38 +26,45 @@ const ResumeNav = () => {
         className="ResumeNav-btnTraining"
         title="training"
         icon={trainingIcon}
+        label="Training"
       />
       <ResumeBtn
         className="ResumeNav-btnExperiences"
         title="experiences"
         icon={experiencesIcon}
+        label="Experiences"
       />
       <ResumeBtn
         className="ResumeNav-btnPublications"
         title="publications"
         icon={publicationsIcon}
+        label="Publications"
       />
       <ResumeBtn
         className="ResumeNav-btnInterests"
         title="interests"
         icon={interestsIcon}
+        label="Interests"
       />
       <ResumeBtn
         className="ResumeNav-btnPeopleSkills"
         title="peopleSkills"
         icon={peopleSkillsIcon}
+        label="People Skills"
       />
       <ResumeBtn
         className="ResumeNav-btnLanguages"
         title="languages"
         icon={languagesIcon}
+        label="Languages"
       />
       <ResumeBtn
         className="ResumeNav-btnSkills"
         title="skills"
         icon={skillsIcon}
+        label="Skills"
       />
-      <div className="ResumeNav-pdfIcon">
+      <div className="ResumeNav-pdfIcon" title="Download as a PDF">
         <img className="ResumeNav-pdfIcon-icon" src={pdfIcon} alt="pdf icon" />
       </div>
     </div>

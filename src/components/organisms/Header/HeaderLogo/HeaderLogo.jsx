@@ -5,16 +5,15 @@ import NcLogo from '../../../../assets/logo-portfolio-nc-darkBlue.svg';
 import './HeaderLogo.scss';
 
 const HeaderLogo = () => {
+  const handleLogoClick = () => {
+    if (window.location.pathname === '/') {
+      const main = document.querySelector('main');
+      main.scrollIntoView();
+    }
+  };
+
   return (
-    <Link
-      className="HeaderLogo"
-      to="/"
-      onClick={() => {
-        if (window.location.pathname === '/') {
-          window.scrollTo(0, 0);
-        }
-      }}
-    >
+    <Link className="HeaderLogo" to="/" onClick={handleLogoClick}>
       <img className="HeaderLogo-svg" src={NcLogo} alt="Nc Logo" />
       <p className="HeaderLogo-title">
         Nicolas <br />

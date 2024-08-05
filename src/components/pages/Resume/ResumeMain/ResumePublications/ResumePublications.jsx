@@ -1,12 +1,14 @@
 import { Link } from 'react-router-dom';
 
+import { FiExternalLink } from 'react-icons/fi';
+
 import publicationsIcon from '../../../../../assets/publications-icon.svg';
 
 import './ResumePublications.scss';
 
 const ResumePublications = () => {
   return (
-    <div className="ResumePublications">
+    <div className="ResumePublications" id="publications">
       <div className="ResumePublications-title">
         <img
           className="ResumePublications-title-icon"
@@ -33,6 +35,7 @@ const ResumePublications = () => {
               to="https://pubmed.ncbi.nlm.nih.gov/25501676/"
               target="_blank"
             >
+              <FiExternalLink />
               <p>Eur J Appl Physiol. 2015 May;115(5):911-8.</p>
             </Link>
           </li>
@@ -48,6 +51,7 @@ const ResumePublications = () => {
               to="https://pubmed.ncbi.nlm.nih.gov/24636223/"
               target="_blank"
             >
+              <FiExternalLink />
               <p>Gait Posture. 2014;40(1):58-63.</p>
             </Link>
           </li>
@@ -64,6 +68,7 @@ const ResumePublications = () => {
               to="https://pubmed.ncbi.nlm.nih.gov/24576090/"
               target="_blank"
             >
+              <FiExternalLink />
               <p>J Sports Sci. 2014;32(11):1013-22.</p>
             </Link>
           </li>
@@ -87,6 +92,7 @@ const ResumePublications = () => {
               to="https://pubmed.ncbi.nlm.nih.gov/28365220/"
               target="_blank"
             >
+              <FiExternalLink />
               <p>J Sci Med Sport. 2017 Aug;20(8):734-739</p>
             </Link>
           </li>
@@ -105,6 +111,7 @@ const ResumePublications = () => {
               to="https://pubmed.ncbi.nlm.nih.gov/26746907/"
               target="_blank"
             >
+              <FiExternalLink />
               <p>Br J Sports Med. 2016 Apr;50(8):481-7.</p>
             </Link>
           </li>
@@ -122,6 +129,7 @@ const ResumePublications = () => {
               to="https://pubmed.ncbi.nlm.nih.gov/27501833/"
               target="_blank"
             >
+              <FiExternalLink />
               <p>Am J Sports Med. 2016 Nov;44(11):2933-2940.</p>
             </Link>
           </li>
@@ -137,6 +145,7 @@ const ResumePublications = () => {
               to="https://pubmed.ncbi.nlm.nih.gov/25575884/"
               target="_blank"
             >
+              <FiExternalLink />
               <p>J Biomech. 2015 Feb 5;48(3):413-7.</p>
             </Link>
           </li>
@@ -159,6 +168,7 @@ const ResumePublications = () => {
               to="https://iris.unipa.it/bitstream/10447/77150/1/Book%20of%20Abstracts%20ECSS%20Bruges%202012.pdf"
               target="_blank"
             >
+              <FiExternalLink />
               <p>
                 17th Annual Congress of European College of Sport Science
                 (Bruges, Belgium).
@@ -178,6 +188,7 @@ const ResumePublications = () => {
               to="https://www.tandfonline.com/doi/abs/10.1080/19424280.2015.1038314"
               target="_blank"
             >
+              <FiExternalLink />
               <p>
                 Twelfth Footwear Biomechanics Symposium (Liverpool, England).
               </p>
@@ -195,6 +206,7 @@ const ResumePublications = () => {
               to="https://www.tandfonline.com/doi/full/10.1080/19424280.2013.799585"
               target="_blank"
             >
+              <FiExternalLink />
               <p>Eleventh Footwear Biomechanics Symposium (Natal, Brazil).</p>
             </Link>
           </li>
@@ -215,6 +227,7 @@ const ResumePublications = () => {
               to="https://worldwide.espacenet.com/publicationDetails/originalDocument?CC=FR&DB=fr.espacenet.com&FT=D&KC=A1&NR=2980338A1&date=20130329&locale=fr_EP"
               target="_blank"
             >
+              <FiExternalLink />
               <p>FR2980338 (A1) ― 2013-03-29.</p>
             </Link>
           </li>
