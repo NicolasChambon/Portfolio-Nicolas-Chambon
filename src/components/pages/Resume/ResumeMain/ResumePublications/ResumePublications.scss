@@ -1,0 +1,47 @@
+@use '../../../../../styles/variables' as v;
+
+.ResumePublications {
+  background-color: v.$backgroundColorT;
+  border: 2px solid v.$backgroundColor;
+  border-radius: v.$borderRadius;
+  margin-bottom: 2rem;
+  padding: 1rem 2rem 1rem 1rem;
+
+  &-title {
+    align-items: center;
+    display: flex;
+    margin-bottom: 1rem;
+
+    &-icon {
+      margin-right: 1rem;
+      width: 2.5rem;
+    }
+  }
+
+  &-item {
+    margin-bottom: 1.5rem;
+    &-type {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      padding-left: 2rem;
+
+      &-article {
+        &-journal {
+          color: v.$darkColor;
+          font-weight: 500;
+
+          &:hover {
+            color: v.$darkColor2;
+            transition: 0.3s;
+          }
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+}
