@@ -41,10 +41,10 @@ const ResumeNav = () => {
         label="Publications"
       />
       <ResumeBtn
-        className="ResumeNav-btnInterests"
-        title="interests"
-        icon={interestsIcon}
-        label="Interests"
+        className="ResumeNav-btnSkills"
+        title="skills"
+        icon={skillsIcon}
+        label="Skills"
       />
       <ResumeBtn
         className="ResumeNav-btnPeopleSkills"
@@ -59,10 +59,10 @@ const ResumeNav = () => {
         label="Languages"
       />
       <ResumeBtn
-        className="ResumeNav-btnSkills"
-        title="skills"
-        icon={skillsIcon}
-        label="Skills"
+        className="ResumeNav-btnInterests"
+        title="interests"
+        icon={interestsIcon}
+        label="Interests"
       />
       <div className="ResumeNav-pdfIcon" title="Download as a PDF">
         <img className="ResumeNav-pdfIcon-icon" src={pdfIcon} alt="pdf icon" />

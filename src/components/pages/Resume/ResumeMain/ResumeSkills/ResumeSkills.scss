@@ -1,0 +1,71 @@
+@use '../../../../../styles/variables' as v;
+
+.ResumeSkills {
+  background-color: v.$backgroundColorT;
+  border: 2px solid v.$backgroundColor;
+  border-radius: v.$borderRadius;
+  margin-bottom: 2rem;
+  padding: 1rem 2rem 1rem 1rem;
+
+  &-title {
+    align-items: center;
+    display: flex;
+    margin-bottom: 1rem;
+
+    &-icon {
+      margin-right: 1rem;
+      width: 2.5rem;
+    }
+  }
+
+  &-items {
+    display: flex;
+    justify-content: space-around;
+
+    @media (max-width: 680px) {
+      flex-direction: column;
+    }
+
+    &-item {
+      margin-bottom: 1.5rem;
+      min-width: 5rem;
+      text-align: center;
+
+      &-category {
+        font-weight: bold;
+        margin-bottom: 1rem;
+
+        &-element {
+          align-items: center;
+          display: flex;
+          gap: 1rem;
+          justify-content: space-between;
+          margin-bottom: 1rem;
+
+          @media (max-width: 680px) {
+            justify-content: center;
+          }
+
+          &-icon {
+            font-size: 2rem;
+            color: v.$darkColor;
+
+            &.javascript {
+              border-radius: 3px;
+            }
+
+            &.express {
+              font-size: 1.3rem;
+              letter-spacing: -0.1rem;
+              margin: auto;
+            }
+          }
+
+          & img {
+            height: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
