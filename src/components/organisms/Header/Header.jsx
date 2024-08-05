@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import { IoMenu } from 'react-icons/io5';
 import { RxCross2 } from 'react-icons/rx';
@@ -12,6 +12,18 @@ import './Header.scss';
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  useEffect(() => {
+    const handleClick = () => {
+      if (isMenuOpen) {
+        setIsMenuOpen(false);
+      }
+    };
+    window.addEventListener('click', handleClick);
+    return () => {
+      window.removeEventListener('click', handleClick);
+    };
+  }, [isMenuOpen]);
+
   return (
     <header className="Header">
       <div className="Header-wrapper">
@@ -19,7 +31,10 @@ const Header = () => {
         <HeaderNav />
         <button
           className="Header-wrapper-menuBtn"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          onClick={(e) => {
+            e.stopPropagation();
+            setIsMenuOpen(!isMenuOpen);
+          }}
         >
           {isMenuOpen ? (
             <RxCross2 className="Header-wrapper-menuBtn-icon" />
