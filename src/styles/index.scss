@@ -31,3 +31,17 @@ h3 {
 p {
   line-height: 2ch;
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: v.$backgroundColor;
+}
+::-webkit-scrollbar-thumb {
+  background: v.$darkColor;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: v.$darkColor2;
+}

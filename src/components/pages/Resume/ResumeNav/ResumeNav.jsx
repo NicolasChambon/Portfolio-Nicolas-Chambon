@@ -29,18 +29,6 @@ const ResumeNav = () => {
         label="Training"
       />
       <ResumeBtn
-        className="ResumeNav-btnExperiences"
-        title="experiences"
-        icon={experiencesIcon}
-        label="Experiences"
-      />
-      <ResumeBtn
-        className="ResumeNav-btnPublications"
-        title="publications"
-        icon={publicationsIcon}
-        label="Publications"
-      />
-      <ResumeBtn
         className="ResumeNav-btnSkills"
         title="skills"
         icon={skillsIcon}
@@ -57,6 +45,18 @@ const ResumeNav = () => {
         title="languages"
         icon={languagesIcon}
         label="Languages"
+      />
+      <ResumeBtn
+        className="ResumeNav-btnExperiences"
+        title="experiences"
+        icon={experiencesIcon}
+        label="Experiences"
+      />
+      <ResumeBtn
+        className="ResumeNav-btnPublications"
+        title="publications"
+        icon={publicationsIcon}
+        label="Publications"
       />
       <ResumeBtn
         className="ResumeNav-btnInterests"
