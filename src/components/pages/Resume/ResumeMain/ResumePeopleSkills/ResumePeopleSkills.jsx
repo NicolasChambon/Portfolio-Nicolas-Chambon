@@ -10,7 +10,7 @@ import './ResumePeopleSkills.scss';
 
 const ResumePeopleSkills = () => {
   return (
-    <div className="ResumePeopleSkills" id="skills">
+    <div className="ResumePeopleSkills" id="peopleSkills">
       <div className="ResumePeopleSkills-title">
         <img
           className="ResumePeopleSkills-title-icon"

@@ -1,0 +1,46 @@
+@use '../../../../../styles/variables' as v;
+
+.ResumeTraining {
+  background-color: v.$backgroundColorT;
+  border: 2px solid v.$backgroundColor;
+  border-radius: v.$borderRadius;
+  margin-bottom: 2rem;
+  padding: 1rem 2rem 1rem 1rem;
+
+  &-title {
+    align-items: center;
+    display: flex;
+    margin-bottom: 1rem;
+
+    &-icon {
+      margin-right: 1rem;
+      width: 2.5rem;
+    }
+  }
+
+  &-item {
+    margin-bottom: 1.5rem;
+    &-diploma {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+    &-whereWhen {
+      display: flex;
+      justify-content: space-between;
+      padding-left: 2rem;
+
+      &-where {
+        font-style: italic;
+        font-weight: bold;
+        margin-bottom: 0.75rem;
+        max-width: 60%;
+      }
+    }
+    &-description {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      padding-left: 2rem;
+    }
+  }
+}
