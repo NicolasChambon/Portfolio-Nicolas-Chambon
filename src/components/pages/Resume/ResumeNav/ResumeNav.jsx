@@ -64,9 +64,14 @@ const ResumeNav = () => {
         icon={interestsIcon}
         label="Interests"
       />
-      <div className="ResumeNav-pdfIcon" title="Download as a PDF">
+      <a
+        className="ResumeNav-pdfIcon"
+        title="Open as a PDF"
+        href="../../../../../public/CV - Nicolas Chambon.pdf"
+        target="_blank"
+      >
         <img className="ResumeNav-pdfIcon-icon" src={pdfIcon} alt="pdf icon" />
-      </div>
+      </a>
     </div>
   );
 };
