@@ -1,0 +1,20 @@
+@use '../../../../../styles/variables' as v;
+
+.ProjectsBtn {
+  &-icon {
+    background-color: v.$backgroundColor;
+    border-radius: 50%;
+    border: 2px solid v.$darkColor;
+    height: 4rem;
+    margin-bottom: calc(100vh / 4);
+    padding: 0.1rem;
+    position: relative;
+    width: 4rem;
+
+    &:hover {
+      transform: scale(1.35);
+      transition: transform 0.3s;
+    }
+    transition: transform 0.3s;
+  }
+}

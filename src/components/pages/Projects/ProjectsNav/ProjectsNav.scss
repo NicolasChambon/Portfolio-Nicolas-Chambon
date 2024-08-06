@@ -1,0 +1,22 @@
+@use '../../../../styles/variables' as v;
+
+.ProjectsNav {
+  align-items: center;
+  background-color: v.$backgroundColorT;
+  border-right: 2px solid v.$darkColor;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 3rem 1rem 2rem 1rem;
+  position: fixed;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background-color: v.$darkColor;
+  }
+}

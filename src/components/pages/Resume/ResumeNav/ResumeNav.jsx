@@ -67,7 +67,7 @@ const ResumeNav = () => {
       <a
         className="ResumeNav-pdfIcon"
         title="Open as a PDF"
-        href="../../../../../public/CV - Nicolas Chambon.pdf"
+        href="./CV - Nicolas Chambon.pdf"
         target="_blank"
       >
         <img className="ResumeNav-pdfIcon-icon" src={pdfIcon} alt="pdf icon" />
