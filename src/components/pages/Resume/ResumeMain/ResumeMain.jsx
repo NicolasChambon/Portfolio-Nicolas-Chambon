@@ -4,6 +4,7 @@ import ResumePublications from './ResumePublications/ResumePublications';
 import ResumeSkills from './ResumeSkills/ResumeSkills';
 import ResumePeopleSkills from './ResumePeopleSkills/ResumePeopleSkills';
 import ResumeLanguages from './ResumeLanguages/ResumeLanguages';
+import ResumeInterests from './ResumeInterests/ResumeInterests';
 
 import './ResumeMain.scss';
 
@@ -16,6 +17,7 @@ const ResumeMain = () => {
       <ResumeLanguages />
       <ResumeExperiences />
       <ResumePublications />
+      <ResumeInterests />
     </div>
   );
 };

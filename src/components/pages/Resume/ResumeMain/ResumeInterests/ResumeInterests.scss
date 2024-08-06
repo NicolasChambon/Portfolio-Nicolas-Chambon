@@ -1,10 +1,10 @@
 @use '../../../../../styles/variables' as v;
 
-.ResumeTraining {
+.ResumeInterests {
   background-color: v.$backgroundColorT;
   border: 2px solid v.$backgroundColor;
   border-radius: v.$borderRadius;
-  margin-bottom: 2rem;
+  margin-bottom: 28rem;
   padding: 1rem 2rem 1rem 1rem;
 
   &-title {
@@ -20,22 +20,12 @@
 
   &-item {
     margin-bottom: 1.5rem;
-    &-diploma {
+
+    &-category {
       font-weight: bold;
       margin-bottom: 0.5rem;
     }
-    &-whereWhen {
-      display: flex;
-      justify-content: space-between;
-      padding-left: 2rem;
 
-      &-where {
-        font-style: italic;
-        font-weight: bold;
-        margin-bottom: 0.75rem;
-        max-width: 60%;
-      }
-    }
     &-description {
       display: flex;
       flex-direction: column;

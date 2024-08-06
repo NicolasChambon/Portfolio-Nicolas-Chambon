@@ -1,61 +1,62 @@
-import trainingIcon from '../../../../../assets/training-icon.svg';
+import interestsIcon from '../../../../../assets/interests-icon.svg';
 
-import './ResumeTraining.scss';
+import './ResumeInterests.scss';
 
-const ResumeTraining = () => {
+const ResumeInterests = () => {
   return (
-    <div className="ResumeTraining" id="training">
-      <div className="ResumeTraining-title">
+    <div className="ResumeInterests" id="interests">
+      <div className="ResumeInterests-title">
         <img
-          className="ResumeTraining-title-icon"
-          src={trainingIcon}
+          className="ResumeInterests-title-icon"
+          src={interestsIcon}
           alt="training icon"
         />
-        <h3 className="ResumeTraining-title-text">Training</h3>
+        <h3 className="ResumeInterests-title-text">Interests</h3>
       </div>
-      <div className="ResumeTraining-item">
-        <p className="ResumeTraining-item-diploma">
-          Professional qualification - Web and Mobile Web Developer (Bac +2)
+
+      <div className="ResumeInterests-item">
+        <p className="ResumeInterests-item-category">
+          Ultra-trails and mountain :
         </p>
-        <div className="ResumeTraining-item-whereWhen">
-          <p className="ResumeTraining-item-whereWhen-where">O'clock School</p>
-          <p className="ResumeTraining-item-whereWhen-when">
-            Nov. 23 - July. 24
-          </p>
-        </div>
-        <ul className="ResumeTraining-item-description">
-          <li className="ResumeTraining-item-description-li">
-            - Frontend : HTML, CSS, JavaScript React specialisation
+
+        <ul className="ResumeInterests-item-description">
+          <li className="ResumeInterests-item-description-li">
+            2021 - Finisher of Tor des Géants (350 km / 26,000 m ascent)
           </li>
-          <li className="ResumeTraining-item-description-li">
-            - Backend : OOP, MVC pattern with PHP/Laravel
+          <li className="ResumeInterests-item-description-li">
+            2015 - Finisher of Diagonale des fous (165 km / 10,000 m ascent)
           </li>
-          <li className="ResumeTraining-item-description-li">
-            - “DATA” specialisation : SQL, NoSQL, API data and NodeJS
+          <li className="ResumeInterests-item-description-li">
+            2003 - Ascent of Mont-Blanc
           </li>
         </ul>
       </div>
-      <div className="ResumeTraining-item">
-        <p className="ResumeTraining-item-diploma">
-          PhD in Human Movement Sciences (Bac +8)
-        </p>
-        <div className="ResumeTraining-item-whereWhen">
-          <p className="ResumeTraining-item-whereWhen-where">
-            Aix-Marseille University
-          </p>
-          <p className="ResumeTraining-item-whereWhen-when">
-            May. 11 - Jan. 15
-          </p>
-        </div>
-        <ul className="ResumeTraining-item-description">
-          <li className="ResumeTraining-item-description-li">
-            Influence of footwear on the biomechanical pattern of running:
-            short-term adaptations to the geometric characteristics of the sole.
+
+      <div className="ResumeInterests-item">
+        <p className="ResumeInterests-item-category">Bike trips :</p>
+
+        <ul className="ResumeInterests-item-description">
+          <li className="ResumeInterests-item-description-li">
+            2020 - Milan - Naples in 7 days (1 120 km / 4,700 m ascent)
+          </li>
+          <li className="ResumeInterests-item-description-li">
+            2017 - Strasbourg - Sant’Agata (Italy) in 9 days (1 200 km / 17,500
+            m ascent)
           </li>
         </ul>
+      </div>
+
+      <div className="ResumeInterests-item">
+        <p className="ResumeInterests-item-category">Black belt in judo</p>
+      </div>
+
+      <div className="ResumeInterests-item">
+        <p className="ResumeInterests-item-category">
+          Drawing up running training plans
+        </p>
       </div>
     </div>
   );
 };
 
-export default ResumeTraining;
+export default ResumeInterests;
