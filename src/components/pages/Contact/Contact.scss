@@ -2,5 +2,84 @@
 
 .Contact {
   height: calc(100vh - 4rem - 1px);
+  padding: 0 2rem;
   width: 100%;
+
+  @media (max-width: 500px) {
+    padding: 0rem;
+  }
+
+  &-wrapper {
+    background-color: v.$backgroundColorT;
+    border: 2px solid v.$backgroundColor;
+    border-radius: v.$borderRadius;
+    margin: 7rem auto 3rem auto;
+    max-width: 1350px;
+    padding: 1rem 2rem 1rem 1rem;
+
+    @media (max-width: 500px) {
+      border-left: none;
+      border-right: none;
+      border-radius: 0;
+    }
+
+    &-title {
+      color: v.$darkColor;
+      position: relative;
+      top: -2.4rem;
+    }
+
+    &-items {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding-left: 2rem;
+
+      @media (max-width: 500px) {
+        padding-left: 1rem;
+      }
+
+      @media (max-width: 416px) {
+        font-size: 0.8rem;
+      }
+
+      &-item {
+        align-items: center;
+        display: flex;
+        font-weight: 500;
+        gap: 1rem;
+
+        &-icon {
+          color: v.$darkColor;
+          font-size: 2rem;
+        }
+
+        &-link {
+          align-items: center;
+          display: flex;
+          gap: 1rem;
+
+          position: relative;
+          &::after {
+            background-color: v.$darkColor;
+            content: '';
+            height: 2px;
+            left: 3rem;
+            position: absolute;
+            top: 90%;
+            transition: width 0.3s;
+            width: 0;
+          }
+          &:hover::after {
+            width: calc(100% - 5rem);
+          }
+
+          &-icon {
+            color: v.$darkColor;
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
 }
