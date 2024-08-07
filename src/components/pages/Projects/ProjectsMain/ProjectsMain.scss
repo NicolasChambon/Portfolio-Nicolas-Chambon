@@ -9,4 +9,15 @@
     max-width: 1350px;
     padding-right: 6rem;
   }
+
+  @media (max-width: 645px) {
+    padding: 4rem 1rem 2rem 6rem;
+  }
+
+  @media (max-width: 480px) {
+    & p,
+    & li {
+      font-size: 0.8rem;
+    }
+  }
 }

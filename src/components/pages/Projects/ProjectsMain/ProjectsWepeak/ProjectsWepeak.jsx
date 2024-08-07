@@ -2,6 +2,7 @@ import ProjectsAim from '../ProjectsAim/ProjectsAim';
 import ProjectsContext from '../ProjectsContext/ProjectsContext';
 import ProjectsFeatures from '../ProjectsFeatures/ProjectsFeatures';
 import ProjectsStack from '../ProjectsStack/ProjectsStack';
+import ProjectsLinks from '../ProjectsLinks/ProjectsLinks';
 
 import reactIcon from '../../../../../assets/react-icon.svg';
 import reduxIcon from '../../../../../assets/redux-icon.svg';
@@ -10,6 +11,9 @@ import sassIcon from '../../../../../assets/sass-icon.svg';
 import phpIcon from '../../../../../assets/php-icon.svg';
 import symfonyIcon from '../../../../../assets/symfony-icon.svg';
 import mysqlIcon from '../../../../../assets/mysql-icon.svg';
+
+import githubIcon from '../../../../../assets/github-icon.svg';
+import vercelIcon from '../../../../../assets/vercel-icon.svg';
 
 import wepeakFullLogo from '../../../../../assets/wepeak-projects-full-logo.svg';
 import wepeakVideo from '../../../../../assets/wepeak-demo.mp4';
@@ -45,13 +49,13 @@ const ProjectsWepeak = () => {
       />
       <ProjectsFeatures
         features={[
-          'Visualize activities',
-          'Filter activities (by sport, location, difficulty, etc.)',
-          'Search for an activity',
-          'Sign up and create a profile',
-          'Authenticate',
-          'Create an activity',
-          'Register for an activity',
+          '- Visualize activities',
+          '- Filter activities (by sport, location, difficulty, etc.)',
+          '- Search for an activity',
+          '- Sign up and create a profile',
+          '- Authenticate',
+          '- Create an activity',
+          '- Register for an activity',
         ]}
       />
       <ProjectsStack
@@ -66,30 +70,21 @@ const ProjectsWepeak = () => {
           { name: 'MySQL', icon: mysqlIcon },
         ]}
       />
+      <ProjectsLinks
+        links={[
+          {
+            name: 'Front-end GitHub repository',
+            url: 'https://github.com/NicolasChambon/WePeak-front-prod',
+            icon: githubIcon,
+          },
+          {
+            name: 'Front-end deployment (under development)',
+            url: 'https://wepeak.vercel.app/',
+            icon: vercelIcon,
+          },
+        ]}
+      />
 
-      <div className="ProjectsWepeak-links">
-        <h4 className="ProjectsWepeak-links-title">Links :</h4>
-        <ul className="ProjectsWepeak-links-list">
-          <li className="ProjectsWepeak-links-list-item">
-            <a
-              className="ProjectsWepeak-links-list-item-link"
-              href="https://github.com/NicolasChambon/WePeak-front-prod"
-              target="_blank"
-            >
-              Front-end GitHub repository
-            </a>
-          </li>
-          <li className="ProjectsWepeak-links-list-item">
-            <a
-              className="ProjectsWepeak-links-list-item-link"
-              href="https://wepeak.vercel.app/"
-              target="_blank"
-            >
-              Front-end deployment (under development)
-            </a>
-          </li>
-        </ul>
-      </div>
       <video className="ProjectsWepeak-video" src={wepeakVideo} controls />
     </div>
   );

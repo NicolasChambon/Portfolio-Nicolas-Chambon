@@ -1,0 +1,41 @@
+@use '../../../../../styles/variables' as v;
+
+.ProjectsLinks {
+  margin-bottom: 3rem;
+
+  &-title {
+    margin-bottom: 1rem;
+  }
+
+  &-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-left: 1rem;
+
+    &-item {
+      display: flex;
+      color: v.$darkColor;
+      flex-direction: row;
+      font-weight: 500;
+      gap: 1rem;
+
+      &-link {
+        align-items: center;
+        display: flex;
+        gap: 1rem;
+
+        &:hover {
+          // we use filter rather than color to change the color of the svg
+          // filter is generated thanks to https://angel-rs.github.io/css-color-filter-generator/
+          filter: brightness(0) saturate(100%) invert(19%) sepia(17%)
+            saturate(3939%) hue-rotate(172deg) brightness(91%) contrast(96%);
+        }
+
+        &-icon {
+          height: 2rem;
+        }
+      }
+    }
+  }
+}

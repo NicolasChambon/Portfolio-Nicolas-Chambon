@@ -10,6 +10,11 @@
     position: relative;
     width: 4rem;
 
+    @media (max-width: 645px) {
+      height: 2.5rem;
+      width: 2.5rem;
+    }
+
     &:hover {
       transform: scale(1.35);
       transition: transform 0.3s;

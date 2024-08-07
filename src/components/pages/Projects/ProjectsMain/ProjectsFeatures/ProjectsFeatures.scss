@@ -6,4 +6,17 @@
   &-title {
     margin-bottom: 0.5rem;
   }
+
+  &-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-left: 1rem;
+
+    &-item {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+    }
+  }
 }
