@@ -1,0 +1,9 @@
+@use '../../../../../styles/variables' as v;
+
+.ProjectsFeatures {
+  margin-bottom: 1rem;
+
+  &-title {
+    margin-bottom: 0.5rem;
+  }
+}

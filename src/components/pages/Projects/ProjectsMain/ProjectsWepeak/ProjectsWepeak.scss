@@ -15,13 +15,7 @@
     width: 14rem;
   }
 
-  &-aim {
-    margin-top: -1rem;
-  }
-
-  &-aim,
-  &-context,
-  &-mainFeatures {
+  &-links {
     margin-bottom: 1rem;
     text-align: justify;
 
@@ -30,6 +24,7 @@
     }
     &-text {
       padding: 0 1rem;
+      text-indent: 2rem;
     }
   }
 

@@ -1,0 +1,15 @@
+@use '../../../../../styles/variables' as v;
+
+.ProjectsAim {
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+  text-align: justify;
+
+  &-title {
+    margin-bottom: 0.5rem;
+  }
+  &-text {
+    padding: 0 1rem;
+    text-indent: 2rem;
+  }
+}

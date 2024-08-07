@@ -39,12 +39,8 @@
           align-items: center;
           display: flex;
           gap: 1rem;
-          justify-content: space-between;
+          justify-content: center;
           margin-bottom: 1rem;
-
-          @media (max-width: 680px) {
-            justify-content: center;
-          }
 
           &-icon {
             font-size: 2rem;
