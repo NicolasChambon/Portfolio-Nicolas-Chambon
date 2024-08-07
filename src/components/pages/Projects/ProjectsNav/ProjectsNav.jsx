@@ -13,7 +13,7 @@ const ProjectsNav = () => {
         className="ProjectsNav-btnWepeak"
         title="wepeak"
         icon={wepeakIcon}
-        label="Wepeak"
+        label="WePeak"
       />
       <ProjectsBtn
         className="ProjectsNav-btnMountify"

@@ -5,13 +5,32 @@
   border: 2px solid v.$backgroundColor;
   border-radius: v.$borderRadius;
   margin-bottom: 4rem;
-  padding: 1rem 2rem;
+  padding: 0rem 2rem 2rem 2rem;
 
   &-logo {
     filter: drop-shadow(0px 0px 4px rgb(255, 255, 255));
     position: relative;
-    top: -2.8rem;
-    width: 20%;
+    right: 1rem;
+    top: -2rem;
+    width: 14rem;
+  }
+
+  &-aim {
+    margin-top: -1rem;
+  }
+
+  &-aim,
+  &-context,
+  &-mainFeatures {
+    margin-bottom: 1rem;
+    text-align: justify;
+
+    &-title {
+      margin-bottom: 0.5rem;
+    }
+    &-text {
+      padding: 0 1rem;
+    }
   }
 
   &-video {

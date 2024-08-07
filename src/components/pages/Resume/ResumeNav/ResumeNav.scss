@@ -6,6 +6,7 @@
   border-right: 2px solid v.$darkColor;
   display: flex;
   flex-direction: column;
+  gap: calc(100vh / 30);
   height: 100%;
   padding: 1rem 0.5rem 2rem 0.5rem;
   position: fixed;
