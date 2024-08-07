@@ -84,7 +84,7 @@ const ProjectsWepeak = () => {
           },
         ]}
       />
-
+      <h4 className="ProjectsWepeak-videoTitle">Demo :</h4>
       <video className="ProjectsWepeak-video" src={wepeakVideo} controls />
     </div>
   );
