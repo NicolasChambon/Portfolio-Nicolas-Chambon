@@ -7,8 +7,12 @@ import './HeaderLogo.scss';
 const HeaderLogo = () => {
   const handleLogoClick = () => {
     if (window.location.pathname === '/') {
-      const main = document.querySelector('main');
-      main.scrollIntoView();
+      const page = document.querySelector('.App-background');
+      page.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth',
+      });
     }
   };
 

@@ -1,6 +1,13 @@
 @use '../../../../../styles/variables' as v;
 
 .ResumeBtn {
+  align-items: center;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  height: 2.25rem;
+  width: 2.25rem;
+
   &-icon {
     background-color: v.$backgroundColor;
     border-radius: 50%;

@@ -2,9 +2,16 @@ import './ResumeBtn.scss';
 
 const ResumeBtn = ({ title, icon, label }) => {
   return (
-    <a className="ResumeBtn" href={`#${title}`} title={label}>
+    <button
+      className="ResumeBtn"
+      title={label}
+      onClick={() => {
+        const section = document.getElementById(title);
+        section.scrollIntoView({ behavior: 'smooth' });
+      }}
+    >
       <img className="ResumeBtn-icon" src={icon} alt={`${title}-icon`} />
-    </a>
+    </button>
   );
 };
 

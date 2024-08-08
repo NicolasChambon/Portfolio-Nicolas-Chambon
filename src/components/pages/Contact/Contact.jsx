@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+
 import { FaHouse } from 'react-icons/fa6';
 import { FaPhone } from 'react-icons/fa6';
 import { MdEmail } from 'react-icons/md';
@@ -9,6 +11,10 @@ import { FiExternalLink } from 'react-icons/fi';
 import './Contact.scss';
 
 const Contact = () => {
+  useEffect(() => {
+    const page = document.querySelector('.App-background');
+    page.scrollTo(0, 0, 'instant');
+  }, []);
   return (
     <main className="Contact">
       <div className="Contact-wrapper">

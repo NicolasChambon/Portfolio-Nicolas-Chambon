@@ -1,8 +1,15 @@
+import { useEffect } from 'react';
+
 import NcLogo from '../../../assets/logos/logo-portfolio-nc-light.svg';
 
 import './Home.scss';
 
 const Home = () => {
+  useEffect(() => {
+    const page = document.querySelector('.App-background');
+    page.scrollTo(0, 0, 'instant');
+  }, []);
+
   return (
     <main className="Home">
       <div className="Home-logo">

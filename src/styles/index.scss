@@ -1,10 +1,6 @@
 @use 'reset';
 @use 'variables' as v;
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: v.$mainFont;
   font-size: v.$textSize;
