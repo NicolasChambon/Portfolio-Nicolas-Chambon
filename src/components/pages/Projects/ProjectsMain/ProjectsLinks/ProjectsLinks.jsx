@@ -10,7 +10,11 @@ const ProjectsLinks = ({ links }) => {
       <ul className="ProjectsLinks-list">
         {links.map((link) => (
           <li key={link.name} className="ProjectsLinks-list-item">
-            <a className="ProjectsLinks-list-item-link" href={link.url}>
+            <a
+              className="ProjectsLinks-list-item-link"
+              href={link.url}
+              target="_blank"
+            >
               <img
                 src={link.icon}
                 alt={`${link.name} icon`}

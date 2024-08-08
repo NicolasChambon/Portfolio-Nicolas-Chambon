@@ -10,9 +10,14 @@
   &-categories {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
     justify-content: space-around;
 
     &-category {
+      display: flex;
+      flex-direction: column;
+
       &-title {
         font-weight: 500;
         margin-bottom: 1rem;
