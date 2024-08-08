@@ -8,6 +8,11 @@
   height: 4rem;
   width: 4rem;
 
+  @media (max-width: 645px) {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
   &-icon {
     background-color: v.$backgroundColor;
     border-radius: 50%;

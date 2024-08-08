@@ -6,7 +6,11 @@ const HeaderMenu = () => {
   const scrollIfOnSamePage = (path) => {
     if (window.location.pathname === path) {
       const page = document.querySelector('.App-background');
-      page.scrollTo(0, 0);
+      page.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth',
+      });
     }
   };
 
