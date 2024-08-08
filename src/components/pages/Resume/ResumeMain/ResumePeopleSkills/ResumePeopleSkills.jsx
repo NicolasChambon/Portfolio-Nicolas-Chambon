@@ -1,10 +1,10 @@
 import { RiTeamFill } from 'react-icons/ri';
-import autonomous from '../../../../../assets/autonomous-icon.svg';
+import autonomous from '../../../../../assets/icons/autonomous-icon.svg';
 import { RiSearchEyeLine } from 'react-icons/ri';
 import { GoChecklist } from 'react-icons/go';
 import { GiChameleonGlyph } from 'react-icons/gi';
 
-import peopleSkillsIcon from '../../../../../assets/people-skills-icon.svg';
+import peopleSkillsIcon from '../../../../../assets/icons/people-skills-icon.svg';
 
 import './ResumePeopleSkills.scss';
 

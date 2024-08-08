@@ -1,14 +1,14 @@
 import ResumeBtn from './ResumeBtn/ResumeBtn';
 
-import profilePicture from '../../../../assets/profile-picture.jpeg';
-import trainingIcon from '../../../../assets/training-icon.svg';
-import experiencesIcon from '../../../../assets/experiences-icon.svg';
-import publicationsIcon from '../../../../assets/publications-icon.svg';
-import interestsIcon from '../../../../assets/interests-icon.svg';
-import peopleSkillsIcon from '../../../../assets/people-skills-icon.svg';
-import languagesIcon from '../../../../assets/languages-icon.svg';
-import skillsIcon from '../../../../assets/skills-icon.svg';
-import pdfIcon from '../../../../assets/pdf-icon.svg';
+import profilePicture from '../../../../assets/images/profile-picture.jpeg';
+import trainingIcon from '../../../../assets/icons/training-icon.svg';
+import experiencesIcon from '../../../../assets/icons/experiences-icon.svg';
+import publicationsIcon from '../../../../assets/icons/publications-icon.svg';
+import interestsIcon from '../../../../assets/icons/interests-icon.svg';
+import peopleSkillsIcon from '../../../../assets/icons/people-skills-icon.svg';
+import languagesIcon from '../../../../assets/icons/languages-icon.svg';
+import skillsIcon from '../../../../assets/icons/skills-icon.svg';
+import pdfIcon from '../../../../assets/icons/pdf-icon.svg';
 
 import './ResumeNav.scss';
 

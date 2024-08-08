@@ -4,19 +4,19 @@ import ProjectsFeatures from '../ProjectsFeatures/ProjectsFeatures';
 import ProjectsStack from '../ProjectsStack/ProjectsStack';
 import ProjectsLinks from '../ProjectsLinks/ProjectsLinks';
 
-import reactIcon from '../../../../../assets/react-icon.svg';
-import reduxIcon from '../../../../../assets/redux-icon.svg';
-import sassIcon from '../../../../../assets/sass-icon.svg';
+import reactIcon from '../../../../../assets/icons/react-icon.svg';
+import reduxIcon from '../../../../../assets/icons/redux-icon.svg';
+import sassIcon from '../../../../../assets/icons/sass-icon.svg';
 
-import phpIcon from '../../../../../assets/php-icon.svg';
-import symfonyIcon from '../../../../../assets/symfony-icon.svg';
-import mysqlIcon from '../../../../../assets/mysql-icon.svg';
+import phpIcon from '../../../../../assets/icons/php-icon.svg';
+import symfonyIcon from '../../../../../assets/icons/symfony-icon.svg';
+import mysqlIcon from '../../../../../assets/icons/mysql-icon.svg';
 
-import githubIcon from '../../../../../assets/github-icon.svg';
-import vercelIcon from '../../../../../assets/vercel-icon.svg';
+import githubIcon from '../../../../../assets/icons/github-icon.svg';
+import vercelIcon from '../../../../../assets/icons/vercel-icon.svg';
 
-import wepeakFullLogo from '../../../../../assets/wepeak-projects-full-logo.svg';
-import wepeakVideo from '../../../../../assets/wepeak-demo.mp4';
+import wepeakFullLogo from '../../../../../assets/logos/wepeak-projects-full-logo.svg';
+import wepeakVideo from '../../../../../assets/videos/wepeak-demo.mp4';
 
 import './ProjectsWepeak.scss';
 

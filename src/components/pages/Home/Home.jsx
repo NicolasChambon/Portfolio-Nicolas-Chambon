@@ -1,4 +1,4 @@
-import NcLogo from '../../../assets/logo-portfolio-nc-light.svg';
+import NcLogo from '../../../assets/logos/logo-portfolio-nc-light.svg';
 
 import './Home.scss';
 

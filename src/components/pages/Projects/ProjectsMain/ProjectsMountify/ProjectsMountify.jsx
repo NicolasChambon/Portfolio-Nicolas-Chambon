@@ -4,21 +4,21 @@ import ProjectsFeatures from '../ProjectsFeatures/ProjectsFeatures';
 import ProjectsStack from '../ProjectsStack/ProjectsStack';
 import ProjectsLinks from '../ProjectsLinks/ProjectsLinks';
 
-import reactIcon from '../../../../../assets/react-icon.svg';
-import reduxIcon from '../../../../../assets/redux-icon.svg';
-import sassIcon from '../../../../../assets/sass-icon.svg';
+import reactIcon from '../../../../../assets/icons/react-icon.svg';
+import reduxIcon from '../../../../../assets/icons/redux-icon.svg';
+import sassIcon from '../../../../../assets/icons/sass-icon.svg';
 
-import nodeIcon from '../../../../../assets/node-icon.svg';
-import expressIcon from '../../../../../assets/express-icon.svg';
-import postgresqlIcon from '../../../../../assets/postgresql-icon.svg';
+import nodeIcon from '../../../../../assets/icons/node-icon.svg';
+import expressIcon from '../../../../../assets/icons/express-icon.svg';
+import postgresqlIcon from '../../../../../assets/icons/postgresql-icon.svg';
 
-import dockerIcon from '../../../../../assets/docker-icon.svg';
-import ovhIcon from '../../../../../assets/ovh-icon.svg';
+import dockerIcon from '../../../../../assets/icons/docker-icon.svg';
+import ovhIcon from '../../../../../assets/icons/ovh-icon.svg';
 
-import githubIcon from '../../../../../assets/github-icon.svg';
+import githubIcon from '../../../../../assets/icons/github-icon.svg';
 
-import mountifyFullLogo from '../../../../../assets/mountify-projects-full-logo.svg';
-import mountifyimage from '../../../../../assets/mountify-screenshot.jpg';
+import mountifyFullLogo from '../../../../../assets/logos/mountify-projects-full-logo.svg';
+import mountifyimage from '../../../../../assets/images/mountify-screenshot.jpg';
 
 import './ProjectsMountify.scss';
 

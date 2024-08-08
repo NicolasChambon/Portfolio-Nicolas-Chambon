@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 import { FiExternalLink } from 'react-icons/fi';
 
-import publicationsIcon from '../../../../../assets/publications-icon.svg';
+import publicationsIcon from '../../../../../assets/icons/publications-icon.svg';
 
 import './ResumePublications.scss';
 

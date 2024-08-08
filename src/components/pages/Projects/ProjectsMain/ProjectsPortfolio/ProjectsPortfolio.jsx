@@ -2,13 +2,13 @@ import ProjectsAim from '../ProjectsAim/ProjectsAim';
 import ProjectsStack from '../ProjectsStack/ProjectsStack';
 import ProjectsLinks from '../ProjectsLinks/ProjectsLinks';
 
-import reactIcon from '../../../../../assets/react-icon.svg';
-import sassIcon from '../../../../../assets/sass-icon.svg';
+import reactIcon from '../../../../../assets/icons/react-icon.svg';
+import sassIcon from '../../../../../assets/icons/sass-icon.svg';
 
-import githubIcon from '../../../../../assets/github-icon.svg';
-import vercelIcon from '../../../../../assets/vercel-icon.svg';
+import githubIcon from '../../../../../assets/icons/github-icon.svg';
+import vercelIcon from '../../../../../assets/icons/vercel-icon.svg';
 
-import portfolioFullLogo from '../../../../../assets/portfolio-projects-full-logo.svg';
+import portfolioFullLogo from '../../../../../assets/logos/portfolio-projects-full-logo.svg';
 
 import './ProjectsPortfolio.scss';
 

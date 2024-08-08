@@ -1,4 +1,4 @@
-import interestsIcon from '../../../../../assets/interests-icon.svg';
+import interestsIcon from '../../../../../assets/icons/interests-icon.svg';
 
 import './ResumeInterests.scss';
 

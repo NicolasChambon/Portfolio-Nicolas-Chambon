@@ -1,4 +1,4 @@
-import trainingIcon from '../../../../../assets/training-icon.svg';
+import trainingIcon from '../../../../../assets/icons/training-icon.svg';
 
 import './ResumeTraining.scss';
 

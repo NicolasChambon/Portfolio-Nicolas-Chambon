@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-import NcLogo from '../../../../assets/logo-portfolio-nc-darkBlue.svg';
+import NcLogo from '../../../../assets/logos/logo-portfolio-nc-darkBlue.svg';
 
 import './HeaderLogo.scss';
 

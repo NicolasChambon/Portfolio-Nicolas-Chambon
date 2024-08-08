@@ -9,10 +9,10 @@ import { BiLogoPostgresql } from 'react-icons/bi';
 
 import { FaGitAlt } from 'react-icons/fa6';
 import { DiScrum } from 'react-icons/di';
-import Matlab from '../../../../../assets/matlab-icon.svg';
+import Matlab from '../../../../../assets/icons/matlab-icon.svg';
 import { IoLogoFigma } from 'react-icons/io5';
 
-import skillsIcon from '../../../../../assets/skills-icon.svg';
+import skillsIcon from '../../../../../assets/icons/skills-icon.svg';
 
 import './ResumeSkills.scss';
 

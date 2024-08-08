@@ -1,8 +1,8 @@
-import italy from '../../../../../assets/italy-icon.svg';
-import france from '../../../../../assets/france-icon.svg';
-import uk from '../../../../../assets/uk-icon.svg';
+import italy from '../../../../../assets/icons/italy-icon.svg';
+import france from '../../../../../assets/icons/france-icon.svg';
+import uk from '../../../../../assets/icons/uk-icon.svg';
 
-import languagesIcon from '../../../../../assets/languages-icon.svg';
+import languagesIcon from '../../../../../assets/icons/languages-icon.svg';
 
 import './ResumeLanguages.scss';
 

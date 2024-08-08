@@ -1,4 +1,4 @@
-import experiencesIcon from '../../../../../assets/experiences-icon.svg';
+import experiencesIcon from '../../../../../assets/icons/experiences-icon.svg';
 
 import './ResumeExperiences.scss';
 

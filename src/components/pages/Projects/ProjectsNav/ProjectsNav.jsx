@@ -1,8 +1,8 @@
 import ProjectsBtn from './ProjectsBtn/ProjectsBtn';
 
-import mountifyIcon from '../../../../assets/mountify-icon.svg';
-import wepeakIcon from '../../../../assets/wepeak-icon.svg';
-import ncIcon from '../../../../assets/logo-portfolio-nc-darkBlue.svg';
+import mountifyIcon from '../../../../assets/icons/mountify-icon.svg';
+import wepeakIcon from '../../../../assets/icons/wepeak-icon.svg';
+import ncIcon from '../../../../assets/logos/logo-portfolio-nc-darkBlue.svg';
 
 import './ProjectsNav.scss';
 

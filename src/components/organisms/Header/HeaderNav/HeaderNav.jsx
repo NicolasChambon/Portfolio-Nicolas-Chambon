@@ -3,6 +3,13 @@ import { NavLink } from 'react-router-dom';
 import './HeaderNav.scss';
 
 const HeaderNav = () => {
+  const scrollIfOnSamePage = (path) => {
+    if (window.location.pathname === path) {
+      const page = document.querySelector('.App-background');
+      page.scrollTo(0, 0);
+    }
+  };
+
   return (
     <nav className="HeaderNav">
       <ul className="HeaderNav-list">
@@ -11,9 +18,7 @@ const HeaderNav = () => {
             className="HeaderNav-list-item-link"
             to="/resume"
             onClick={() => {
-              if (window.location.pathname === '/resume') {
-                window.scrollTo(0, 0);
-              }
+              scrollIfOnSamePage('/resume');
             }}
           >
             Resume
@@ -24,9 +29,7 @@ const HeaderNav = () => {
             className="HeaderNav-list-item-link"
             to="/projects"
             onClick={() => {
-              if (window.location.pathname === '/projects') {
-                window.scrollTo(0, 0);
-              }
+              scrollIfOnSamePage('/projects');
             }}
           >
             Projects
@@ -37,9 +40,7 @@ const HeaderNav = () => {
             className="HeaderNav-list-item-link"
             to="/contact"
             onClick={() => {
-              if (window.location.pathname === '/contact') {
-                window.scrollTo(0, 0);
-              }
+              scrollIfOnSamePage('/contact');
             }}
           >
             Contact
