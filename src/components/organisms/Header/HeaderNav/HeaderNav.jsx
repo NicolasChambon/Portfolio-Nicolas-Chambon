@@ -53,7 +53,7 @@ const HeaderNav = () => {
             Contact
           </NavLink>
         </li>
-        {/* <li className="HeaderNav-list-item">
+        <li className="HeaderNav-list-item">
           <button className="HeaderNav-list-item-btn" type="button">
             <img
               className="HeaderNav-list-item-btn-icon"
@@ -61,7 +61,7 @@ const HeaderNav = () => {
               alt="France Icon"
             />
           </button>
-        </li> */}
+        </li>
       </ul>
     </nav>
   );
