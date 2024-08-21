@@ -18,7 +18,9 @@ const ResumeTraining = () => {
           Professional qualification - Web and Mobile Web Developer (Bac +2)
         </p>
         <div className="ResumeTraining-item-whereWhen">
-          <p className="ResumeTraining-item-whereWhen-where">O'clock School</p>
+          <p className="ResumeTraining-item-whereWhen-where">
+            O&apos;clock School
+          </p>
           <p className="ResumeTraining-item-whereWhen-when">
             Nov. 23 - July. 24
           </p>

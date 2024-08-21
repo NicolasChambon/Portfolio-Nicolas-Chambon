@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import './ResumeBtn.scss';
 
 const ResumeBtn = ({ title, icon, label }) => {
@@ -13,6 +15,12 @@ const ResumeBtn = ({ title, icon, label }) => {
       <img className="ResumeBtn-icon" src={icon} alt={`${title}-icon`} />
     </button>
   );
+};
+
+ResumeBtn.propTypes = {
+  title: PropTypes.string.isRequired,
+  icon: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
 };
 
 export default ResumeBtn;

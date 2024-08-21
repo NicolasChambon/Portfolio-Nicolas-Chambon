@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import './ProjectsFeatures.scss';
 
 const ProjectsFeatures = ({ features }) => {
@@ -14,6 +16,10 @@ const ProjectsFeatures = ({ features }) => {
       </ul>
     </div>
   );
+};
+
+ProjectsFeatures.propTypes = {
+  features: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 export default ProjectsFeatures;

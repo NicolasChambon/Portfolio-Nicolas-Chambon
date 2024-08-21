@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import { FiExternalLink } from 'react-icons/fi';
 
 import './ProjectsLinks.scss';
@@ -28,6 +30,16 @@ const ProjectsLinks = ({ links }) => {
       </ul>
     </div>
   );
+};
+
+ProjectsLinks.propTypes = {
+  links: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      url: PropTypes.string.isRequired,
+      icon: PropTypes.string.isRequired,
+    }),
+  ).isRequired,
 };
 
 export default ProjectsLinks;

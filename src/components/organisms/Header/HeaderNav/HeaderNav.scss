@@ -6,6 +6,7 @@
   }
 
   &-list {
+    align-items: center;
     display: flex;
     gap: 4rem;
 
@@ -35,6 +36,15 @@
         &.active::after {
           width: 100%;
           background-color: v.$darkColor;
+        }
+      }
+
+      &-btn {
+        background-color: transparent;
+        border: none;
+
+        &-icon {
+          width: 1.5rem;
         }
       }
     }

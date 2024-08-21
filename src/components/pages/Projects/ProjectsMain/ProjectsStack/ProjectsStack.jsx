@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import './ProjectsStack.scss';
 
 const ProjectsStack = ({ frontTechs, backTechs, otherTechs }) => {
@@ -73,6 +75,27 @@ const ProjectsStack = ({ frontTechs, backTechs, otherTechs }) => {
       </div>
     </div>
   );
+};
+
+ProjectsStack.propTypes = {
+  frontTechs: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      icon: PropTypes.string.isRequired,
+    }),
+  ).isRequired,
+  backTechs: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      icon: PropTypes.string.isRequired,
+    }),
+  ),
+  otherTechs: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      icon: PropTypes.string.isRequired,
+    }),
+  ),
 };
 
 export default ProjectsStack;

@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import './ProjectsContext.scss';
 
 const ProjectsContext = ({ text }) => {
@@ -8,6 +10,10 @@ const ProjectsContext = ({ text }) => {
       <p className="ProjectsContext-text">{text}</p>
     </div>
   );
+};
+
+ProjectsContext.propTypes = {
+  text: PropTypes.string.isRequired,
 };
 
 export default ProjectsContext;

@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import './ProjectsAim.scss';
 
 const ProjectsAim = ({ text }) => {
@@ -8,6 +10,10 @@ const ProjectsAim = ({ text }) => {
       <p className="ProjectsAim-text">{text}</p>
     </div>
   );
+};
+
+ProjectsAim.propTypes = {
+  text: PropTypes.string.isRequired,
 };
 
 export default ProjectsAim;

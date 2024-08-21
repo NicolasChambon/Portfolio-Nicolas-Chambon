@@ -1,5 +1,8 @@
 import { NavLink } from 'react-router-dom';
 
+import frIcon from '../../../../assets/icons/france-icon.svg';
+import enIcon from '../../../../assets/icons/uk-icon.svg';
+
 import './HeaderNav.scss';
 
 const HeaderNav = () => {
@@ -49,6 +52,15 @@ const HeaderNav = () => {
           >
             Contact
           </NavLink>
+        </li>
+        <li className="HeaderNav-list-item">
+          <button className="HeaderNav-list-item-btn" type="button">
+            <img
+              className="HeaderNav-list-item-btn-icon"
+              src={frIcon}
+              alt="France Icon"
+            />
+          </button>
         </li>
       </ul>
     </nav>
