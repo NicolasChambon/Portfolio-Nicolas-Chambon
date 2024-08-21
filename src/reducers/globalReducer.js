@@ -1,7 +1,7 @@
 import { TOOGLE_LANGUAGE } from '../actions/globalActions';
 
 export const initialState = {
-  language: { messages: '' },
+  language: 'en',
 };
 
 const globalReducer = (state = initialState, action = {}) => {

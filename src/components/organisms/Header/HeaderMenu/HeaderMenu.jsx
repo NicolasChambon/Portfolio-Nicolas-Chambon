@@ -1,4 +1,10 @@
+import { useSelector, useDispatch } from 'react-redux';
 import { NavLink } from 'react-router-dom';
+
+import { toogleLanguage } from '../../../../actions/globalActions';
+
+import frIcon from '../../../../assets/icons/france-icon.svg';
+import enIcon from '../../../../assets/icons/uk-icon.svg';
 
 import './HeaderMenu.scss';
 
@@ -14,6 +20,9 @@ const HeaderMenu = () => {
     }
   };
 
+  const dispatch = useDispatch();
+  const language = useSelector((state) => state.global.language);
+
   return (
     <nav className="HeaderMenu">
       <ul className="HeaderMenu-list">
@@ -25,7 +34,7 @@ const HeaderMenu = () => {
               scrollIfOnSamePage('/resume');
             }}
           >
-            Resume
+            {language === 'en' ? 'Resume' : 'CV'}
           </NavLink>
         </li>
         <li className="HeaderMenu-list-item">
@@ -36,7 +45,7 @@ const HeaderMenu = () => {
               scrollIfOnSamePage('/projects');
             }}
           >
-            Projects
+            {language === 'en' ? 'Projects' : 'Projets'}
           </NavLink>
         </li>
         <li className="HeaderMenu-list-item">
@@ -49,6 +58,21 @@ const HeaderMenu = () => {
           >
             Contact
           </NavLink>
+        </li>
+        <li className="HeaderMenu-list-item">
+          <button
+            className="HeaderMenu-list-item-btn"
+            type="button"
+            onClick={() => {
+              dispatch(toogleLanguage(language === 'en' ? 'fr' : 'en'));
+            }}
+          >
+            <img
+              className="HeaderMenu-list-item-btn-icon"
+              src={language === 'en' ? frIcon : enIcon}
+              alt="France Icon"
+            />
+          </button>
         </li>
       </ul>
     </nav>
