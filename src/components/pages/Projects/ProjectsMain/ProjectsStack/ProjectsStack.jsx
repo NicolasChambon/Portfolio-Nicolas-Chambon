@@ -1,8 +1,12 @@
+import { useSelector } from 'react-redux';
+
 import PropTypes from 'prop-types';
 
 import './ProjectsStack.scss';
 
 const ProjectsStack = ({ frontTechs, backTechs, otherTechs }) => {
+  const language = useSelector((state) => state.global.language);
+
   return (
     <div className="ProjectsStack">
       <h4 className="ProjectsStack-title">Stack :</h4>
@@ -52,7 +56,9 @@ const ProjectsStack = ({ frontTechs, backTechs, otherTechs }) => {
         )}
         {otherTechs && (
           <div className="ProjectsStack-categories-category">
-            <p className="ProjectsStack-categories-category-title">Other</p>
+            <p className="ProjectsStack-categories-category-title">
+              {language === 'en' ? 'Other' : 'Autres'}
+            </p>
             <ul className="ProjectsStack-categories-category-list">
               {otherTechs.map((tech) => (
                 <li

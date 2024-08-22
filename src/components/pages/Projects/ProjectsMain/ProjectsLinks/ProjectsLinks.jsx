@@ -1,3 +1,5 @@
+import { useSelector } from 'react-redux';
+
 import PropTypes from 'prop-types';
 
 import { FiExternalLink } from 'react-icons/fi';
@@ -5,9 +7,13 @@ import { FiExternalLink } from 'react-icons/fi';
 import './ProjectsLinks.scss';
 
 const ProjectsLinks = ({ links }) => {
+  const language = useSelector((state) => state.global.language);
+
   return (
     <div className="ProjectsLinks">
-      <h4 className="ProjectsLinks-title">Links :</h4>
+      <h4 className="ProjectsLinks-title">
+        {language === 'en' ? 'Links :' : 'Liens :'}
+      </h4>
 
       <ul className="ProjectsLinks-list">
         {links.map((link) => (

@@ -1,3 +1,5 @@
+import { useSelector } from 'react-redux';
+
 import ProjectsAim from '../ProjectsAim/ProjectsAim';
 import ProjectsStack from '../ProjectsStack/ProjectsStack';
 import ProjectsLinks from '../ProjectsLinks/ProjectsLinks';
@@ -13,6 +15,8 @@ import portfolioFullLogo from '../../../../../assets/logos/portfolio-projects-fu
 import './ProjectsPortfolio.scss';
 
 const ProjectsPortfolio = () => {
+  const language = useSelector((state) => state.global.language);
+
   return (
     <div className="ProjectsPortfolio">
       <img
@@ -21,7 +25,14 @@ const ProjectsPortfolio = () => {
         alt="Portfolio logo"
         id="portfolio"
       />
-      <ProjectsAim text="This portfolio is a responsive web application that I created to showcase my skills as a web developer. It is built with React and Sass. It is a single-page application that allows users to discover my projects, my skills, and my contact information." />
+      <ProjectsAim
+        text={
+          language === 'en'
+            ? 'This portfolio is a responsive web application that I created to showcase my skills as a web developer. It is built with React and Sass. It is a single-page application that allows users to discover my projects, my skills, and my contact information.'
+            : "Ce portfolio est une application web responsive que j'ai créée pour mettre en avant mes compétences en tant que développeur web. Il est construit avec React et Sass. C'est une single page application qui permet aux utilisateurs de découvrir mes projets, mes compétences et mes coordonnées."
+        }
+      />
+
       <ProjectsStack
         frontTechs={[
           { name: 'React', icon: reactIcon },
