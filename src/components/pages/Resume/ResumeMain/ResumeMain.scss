@@ -17,13 +17,19 @@
     }
   }
 
+  @media (max-width: 450px) {
+    & h3 {
+      font-size: 1.6rem;
+    }
+  }
+
   @media (max-width: 435px) {
     padding: 2rem 1rem 2rem 5rem;
   }
 
   @media (max-width: 370px) {
     & h3 {
-      font-size: 1.5rem;
+      font-size: 1.45rem;
     }
   }
 }
