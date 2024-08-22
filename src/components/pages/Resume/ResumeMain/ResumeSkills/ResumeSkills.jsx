@@ -1,3 +1,5 @@
+import { useSelector } from 'react-redux';
+
 import { SiSass } from 'react-icons/si';
 import { SiJavascript } from 'react-icons/si';
 import { FaReact } from 'react-icons/fa';
@@ -17,6 +19,8 @@ import skillsIcon from '../../../../../assets/icons/skills-icon.svg';
 import './ResumeSkills.scss';
 
 const ResumeSkills = () => {
+  const language = useSelector((state) => state.global.language);
+
   return (
     <div className="ResumeSkills" id="skills">
       <div className="ResumeSkills-title">
@@ -25,7 +29,9 @@ const ResumeSkills = () => {
           src={skillsIcon}
           alt="skills icon"
         />
-        <h3 className="ResumeSkills-title-text">Skills</h3>
+        <h3 className="ResumeSkills-title-text">
+          {language === 'en' ? 'Skills' : 'Compétences'}
+        </h3>
       </div>
 
       <div className="ResumeSkills-items">
@@ -89,7 +95,9 @@ const ResumeSkills = () => {
         </div>
 
         <div className="ResumeSkills-items-item">
-          <p className="ResumeSkills-items-item-category">Other</p>
+          <p className="ResumeSkills-items-item-category">
+            {language === 'en' ? 'Other' : 'Autres'}
+          </p>
           <div className="ResumeSkills-items-item-category-element">
             <FaGitAlt className="ResumeSkills-items-item-category-element-icon" />
             <p className="ResumeSkills-items-item-category-element-text">Git</p>

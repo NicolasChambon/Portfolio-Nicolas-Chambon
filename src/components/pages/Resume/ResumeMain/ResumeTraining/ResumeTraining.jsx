@@ -1,8 +1,12 @@
+import { useSelector } from 'react-redux';
+
 import trainingIcon from '../../../../../assets/icons/training-icon.svg';
 
 import './ResumeTraining.scss';
 
 const ResumeTraining = () => {
+  const language = useSelector((state) => state.global.language);
+
   return (
     <div className="ResumeTraining" id="training">
       <div className="ResumeTraining-title">
@@ -11,48 +15,63 @@ const ResumeTraining = () => {
           src={trainingIcon}
           alt="training icon"
         />
-        <h3 className="ResumeTraining-title-text">Training</h3>
+        <h3 className="ResumeTraining-title-text">
+          {language === 'en' ? 'Training' : 'Formation'}
+        </h3>
       </div>
       <div className="ResumeTraining-item">
         <p className="ResumeTraining-item-diploma">
-          Professional qualification - Web and Mobile Web Developer (Bac +2)
+          {language === 'en'
+            ? 'Professional qualification - Web and Mobile Web Developer (Bac +2)'
+            : 'Titre professionnel - Développeur Web et Web Mobile (Bac +2)'}
         </p>
         <div className="ResumeTraining-item-whereWhen">
           <p className="ResumeTraining-item-whereWhen-where">
-            O&apos;clock School
+            {language === 'en' ? "O'clock School" : "École O'clock"}
           </p>
           <p className="ResumeTraining-item-whereWhen-when">
-            Nov. 23 - July. 24
+            {language === 'en' ? 'Nov. 23 - July. 24' : 'nov. 23 - juil. 24'}
           </p>
         </div>
         <ul className="ResumeTraining-item-description">
           <li className="ResumeTraining-item-description-li">
-            - Frontend : HTML, CSS, JavaScript React specialisation
+            {language === 'en'
+              ? '- Front-end : HTML, CSS, JavaScript React specialisation'
+              : '- Front-end : HTML, CSS, JavaScript spécialisation React'}
           </li>
           <li className="ResumeTraining-item-description-li">
-            - Backend : OOP, MVC pattern with PHP/Laravel
+            {language === 'en'
+              ? '- Back-end : OOP, MVC pattern with PHP/Laravel'
+              : '- Back-end : POO, modèle MVC avec PHP/Laravel'}
           </li>
           <li className="ResumeTraining-item-description-li">
-            - “DATA” specialisation : SQL, NoSQL, API data and NodeJS
+            {language === 'en'
+              ? '- “DATA” specialisation : SQL, NoSQL, API data and NodeJS'
+              : '- Spécialisation “DATA” : SQL, NoSQL, API data et NodeJS'}
           </li>
         </ul>
       </div>
       <div className="ResumeTraining-item">
         <p className="ResumeTraining-item-diploma">
-          PhD in Human Movement Sciences (Bac +8)
+          {language === 'en'
+            ? 'PhD in Human Movement Sciences (Bac +8)'
+            : 'Doctorat en Sciences du Mouvement Humain (Bac +8)'}
         </p>
         <div className="ResumeTraining-item-whereWhen">
           <p className="ResumeTraining-item-whereWhen-where">
-            Aix-Marseille University
+            {language === 'en'
+              ? 'Aix-Marseille University'
+              : 'Aix-Marseille Université'}
           </p>
           <p className="ResumeTraining-item-whereWhen-when">
-            May. 11 - Jan. 15
+            {language === 'en' ? 'May 11 - Jan. 15' : 'mai 11 - jan. 15'}
           </p>
         </div>
         <ul className="ResumeTraining-item-description">
           <li className="ResumeTraining-item-description-li">
-            Influence of footwear on the biomechanical pattern of running:
-            short-term adaptations to the geometric characteristics of the sole.
+            {language === 'en'
+              ? 'Influence of footwear on the biomechanical pattern of running: short-term adaptations to the geometric characteristics of the sole.'
+              : 'Influence de la chaussure sur le schéma biomécanique de course à pied : adaptations à court terme aux caractéristiques géométriques de la semelle.'}
           </li>
         </ul>
       </div>

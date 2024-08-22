@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 import { FiExternalLink } from 'react-icons/fi';
 
@@ -7,6 +8,8 @@ import publicationsIcon from '../../../../../assets/icons/publications-icon.svg'
 import './ResumePublications.scss';
 
 const ResumePublications = () => {
+  const language = useSelector((state) => state.global.language);
+
   return (
     <div className="ResumePublications" id="publications">
       <div className="ResumePublications-title">
@@ -19,13 +22,16 @@ const ResumePublications = () => {
       </div>
       <div className="ResumePublications-item">
         <p className="ResumePublications-item-type">
-          Publications in scientific journals as first author :
+          {language === 'en'
+            ? 'Publications in scientific journals as first author :'
+            : 'Publications dans des revues scientifiques en tant que premier auteur :'}
         </p>
         <ul className="ResumePublications-item-list">
           <li className="ResumePublications-item-list-article">
             <p className="ResumePublications-item-list-article-title">
-              Shoe drop has opposite influence on running pattern when running
-              overground or on a treadmill.
+              {language === 'en'
+                ? 'Shoe drop has opposite influence on running pattern when running overground or on a treadmill.'
+                : 'Le drop de la semelle a une influence opposée sur le patron de course à pied entre la course sur sol et sur tapis.'}
             </p>
             <p className="ResumePublications-item-list-article-authors">
               Chambon N, Delattre N, Guéguen N, Berton E, Rao G.
@@ -41,7 +47,9 @@ const ResumePublications = () => {
           </li>
           <li className="ResumePublications-item-list-article">
             <p className="ResumePublications-item-list-article-title">
-              Is midsole thickness a key parameter for the running pattern?
+              {language === 'en'
+                ? 'Is midsole thickness a key parameter for the running pattern?'
+                : 'L’épaisseur de la semelle intermédiaire est-elle un paramètre clé pour le patron de course ?'}
             </p>
             <p className="ResumePublications-item-list-article-authors">
               Chambon N, Delattre N, Guéguen N, Berton E, Rao G.
@@ -57,8 +65,9 @@ const ResumePublications = () => {
           </li>
           <li className="ResumePublications-item-list-article">
             <p className="ResumePublications-item-list-article-title">
-              Aging of running shoes and its effect on mechanical and
-              biomechanical variables: implications for runners.
+              {language === 'en'
+                ? 'Aging of running shoes and its effect on mechanical and biomechanical variables: implications for runners.'
+                : 'Vieillissement des chaussures de course et son effet sur les variables mécaniques et biomécaniques : implications pour les coureurs.'}
             </p>
             <p className="ResumePublications-item-list-article-authors">
               Chambon N, Sevrez V, Ly QH, Guéguen N, Berton E, Rao G.
@@ -76,13 +85,16 @@ const ResumePublications = () => {
       </div>
       <div className="ResumePublications-item">
         <p className="ResumePublications-item-type">
-          Publications in scientific journals as co-author :
+          {language === 'en'
+            ? 'Publications in scientific journals as co-author :'
+            : 'Publications dans des revues scientifiques en tant que co-auteur :'}
         </p>
         <ul className="ResumePublications-item-list">
           <li className="ResumePublications-item-list-article">
             <p className="ResumePublications-item-list-article-title">
-              Adaptation of running pattern to the drop of standard cushioned
-              shoes: A randomised controlled trial with a 6-month follow-up.
+              {language === 'en'
+                ? 'Adaptation of running pattern to the drop of standard cushioned shoes: A randomised controlled trial with a 6-month follow-up.'
+                : 'Adaptation du patron de course au drop des chaussures de course standard : un essai contrôlé randomisé avec un suivi de 6 mois.'}
             </p>
             <p className="ResumePublications-item-list-article-authors">
               Malisoux L, Gette P, Chambon N, Urhausen A, Theisen D.
@@ -98,9 +110,9 @@ const ResumePublications = () => {
           </li>
           <li className="ResumePublications-item-list-article">
             <p className="ResumePublications-item-list-article-title">
-              Injury risk in runners using standard or motion control shoes: a
-              randomised controlled trial with participant and assessor
-              blinding.
+              {language === 'en'
+                ? 'Injury risk in runners using standard or motion control shoes: a randomised controlled trial with participant and assessor blinding.'
+                : 'Risque de blessure chez les coureurs utilisant des chaussures standard ou de contrôle du mouvement : un essai contrôlé randomisé avec un aveuglement des participants et des évaluateurs.'}
             </p>
             <p className="ResumePublications-item-list-article-authors">
               Malisoux L, Chambon N, Delattre N, Gueguen N, Urhausen A, Theisen
@@ -117,9 +129,9 @@ const ResumePublications = () => {
           </li>
           <li className="ResumePublications-item-list-article">
             <p className="ResumePublications-item-list-article-title">
-              Influence of the Heel-to-Toe Drop of Standard Cushioned Running
-              Shoes on Injury Risk in Leisure-Time Runners: A Randomized
-              Controlled Trial With 6-Month Follow-up.
+              {language === 'en'
+                ? 'Influence of the Heel-to-Toe Drop of Standard Cushioned Running Shoes on Injury Risk in Leisure-Time Runners: A Randomized Controlled Trial With 6-Month Follow-up.'
+                : 'Influence du drop talon-orteil des chaussures de course standard rembourrées sur le risque de blessure chez les coureurs de loisir : un essai contrôlé randomisé avec un suivi de 6 mois.'}
             </p>
             <p className="ResumePublications-item-list-article-authors">
               Malisoux L, Chambon N, Urhausen A, Theisen D.
@@ -135,7 +147,9 @@ const ResumePublications = () => {
           </li>
           <li className="ResumePublications-item-list-article">
             <p className="ResumePublications-item-list-article-title">
-              Does wearing shoes affect your biomechanical efficiency?
+              {language === 'en'
+                ? 'Does wearing shoes affect your biomechanical efficiency?'
+                : 'Le port de chaussures affecte-t-il votre efficacité biomécanique ?'}
             </p>
             <p className="ResumePublications-item-list-article-authors">
               Rao G, Chambon N, Guéguen N, Berton E, Delattre N.
@@ -153,12 +167,16 @@ const ResumePublications = () => {
       </div>
       <div className="ResumePublications-item">
         <p className="ResumePublications-item-type">
-          Conferences at international congresses :
+          {language === 'en'
+            ? 'Conferences at international congresses :'
+            : 'Conférences lors de congrès internationaux :'}
         </p>
         <ul className="ResumePublications-item-list">
           <li className="ResumePublications-item-list-article">
             <p className="ResumePublications-item-list-article-title">
-              Effect of midsole thickness on running patterns.
+              {language === 'en'
+                ? 'Effect of midsole thickness on running patterns.'
+                : 'Effet de l’épaisseur de la semelle intermédiaire sur les patrons de course.'}
             </p>
             <p className="ResumePublications-item-list-article-authors">
               Chambon N, Delattre N, Berton E, Rao G.
@@ -170,15 +188,17 @@ const ResumePublications = () => {
             >
               <FiExternalLink />
               <p>
-                17th Annual Congress of European College of Sport Science
-                (Bruges, Belgium).
+                {language === 'en'
+                  ? '17th Annual Congress of European College of Sport Science (Bruges, Belgium).'
+                  : '17e Congrès annuel du Collège Européen des Sciences du Sport (ECSS) (Bruges, Belgique).'}
               </p>
             </Link>
           </li>
           <li className="ResumePublications-item-list-article">
             <p className="ResumePublications-item-list-article-title">
-              Foot angle at touchdown is not linearly related to the loading
-              rate during running.
+              {language === 'en'
+                ? 'Foot angle at touchdown is not linearly related to the loading rate during running.'
+                : "L'angle du pied au contact n'est pas linéairement lié au taux de chargement lors de la course."}
             </p>
             <p className="ResumePublications-item-list-article-authors">
               Chambon N, Rao G, Guéguen N, Berton E, Delattre N.
@@ -190,13 +210,17 @@ const ResumePublications = () => {
             >
               <FiExternalLink />
               <p>
-                Twelfth Footwear Biomechanics Symposium (Liverpool, England).
+                {language === 'en'
+                  ? 'Twelfth Footwear Biomechanics Symposium (Liverpool, England).'
+                  : 'Douzième Symposium de Biomécanique de la Chaussure (Liverpool, Angleterre).'}
               </p>
             </Link>
           </li>
           <li className="ResumePublications-item-list-article">
             <p className="ResumePublications-item-list-article-title">
-              The effect of shoe drop on running pattern.
+              {language === 'en'
+                ? 'The effect of shoe drop on running pattern.'
+                : "L'effet du drop de la chaussure sur le patron de course."}
             </p>
             <p className="ResumePublications-item-list-article-authors">
               Chambon N, Delattre N, Berton E, Guéguen N, Rao G.
@@ -207,17 +231,25 @@ const ResumePublications = () => {
               target="_blank"
             >
               <FiExternalLink />
-              <p>Eleventh Footwear Biomechanics Symposium (Natal, Brazil).</p>
+              <p>
+                {language === 'en'
+                  ? 'Eleventh Footwear Biomechanics Symposium (Natal, Brazil).'
+                  : 'Onzième Symposium de Biomécanique de la Chaussure (Natal, Brésil).'}
+              </p>
             </Link>
           </li>
         </ul>
       </div>
       <div className="ResumePublications-item">
-        <p className="ResumePublications-item-type">Patent :</p>
+        <p className="ResumePublications-item-type">
+          {language === 'en' ? 'Patent :' : 'Brevet :'}
+        </p>
         <ul className="ResumePublications-item-list">
           <li className="ResumePublications-item-list-article">
             <p className="ResumePublications-item-list-article-title">
-              Article of footwear including a slipper and at least one module.
+              {language === 'en'
+                ? 'Article of footwear including a slipper and at least one module.'
+                : 'Article chaussant comprenant un chausson et au moins un module.'}
             </p>
             <p className="ResumePublications-item-list-article-authors">
               Chambon N, Delattre N, Longo A.

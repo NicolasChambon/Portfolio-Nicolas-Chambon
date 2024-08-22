@@ -1,3 +1,5 @@
+import { useSelector } from 'react-redux';
+
 import ResumeBtn from './ResumeBtn/ResumeBtn';
 
 import profilePicture from '../../../../assets/images/profile-picture.jpeg';
@@ -13,6 +15,8 @@ import pdfIcon from '../../../../assets/icons/pdf-icon.svg';
 import './ResumeNav.scss';
 
 const ResumeNav = () => {
+  const language = useSelector((state) => state.global.language);
+
   return (
     <div className="ResumeNav">
       <div className="ResumeNav-picture">
@@ -26,31 +30,31 @@ const ResumeNav = () => {
         className="ResumeNav-btnTraining"
         title="training"
         icon={trainingIcon}
-        label="Training"
+        label={language === 'en' ? 'Training' : 'Formation'}
       />
       <ResumeBtn
         className="ResumeNav-btnSkills"
         title="skills"
         icon={skillsIcon}
-        label="Skills"
+        label={language === 'en' ? 'Skills' : 'Compétences'}
       />
       <ResumeBtn
         className="ResumeNav-btnPeopleSkills"
         title="peopleSkills"
         icon={peopleSkillsIcon}
-        label="People Skills"
+        label={language === 'en' ? 'People Skills' : 'Savoir-être'}
       />
       <ResumeBtn
         className="ResumeNav-btnLanguages"
         title="languages"
         icon={languagesIcon}
-        label="Languages"
+        label={language === 'en' ? 'Languages' : 'Langues'}
       />
       <ResumeBtn
         className="ResumeNav-btnExperiences"
         title="experiences"
         icon={experiencesIcon}
-        label="Experiences"
+        label={language === 'en' ? 'Experiences' : 'Expériences'}
       />
       <ResumeBtn
         className="ResumeNav-btnPublications"
@@ -62,11 +66,11 @@ const ResumeNav = () => {
         className="ResumeNav-btnInterests"
         title="interests"
         icon={interestsIcon}
-        label="Interests"
+        label={language === 'en' ? 'Interests' : "Centres d'intérêt"}
       />
       <a
         className="ResumeNav-pdfIcon"
-        title="Open as a PDF"
+        title={language === 'en' ? 'Open as a PDF' : 'Ouvrir en PDF'}
         href="./CV - Nicolas Chambon.pdf"
         target="_blank"
       >
