@@ -102,7 +102,7 @@ const ResumeExperiences = () => {
               : 'Decathlon - Laboratoire de biomécanique (Lille, France)'}
           </p>
           <p className="ResumeExperiences-item-whereWhen-when">
-            {language === 'en' ? 'Sept. 17 - Sept. 18' : 'sept. 17 - sept. 18'}
+            {language === 'en' ? 'Sept. 10 - Dec. 17' : 'sept. 10 - dec. 17'}
           </p>
         </div>
         <ul className="ResumeExperiences-item-description">

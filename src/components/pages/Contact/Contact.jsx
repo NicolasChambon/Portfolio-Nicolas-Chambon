@@ -38,7 +38,7 @@ const Contact = () => {
             >
               <MdEmail className="Contact-wrapper-items-item-link-icon" />
               <p className="Contact-wrapper-items-item-link-text">
-                nico.chambon@gmail.com
+                nicolas.chambon.dev@gmail.com
               </p>
               <FiExternalLink className="Contact-wrapper-items-item-link-iconLink" />
             </a>
