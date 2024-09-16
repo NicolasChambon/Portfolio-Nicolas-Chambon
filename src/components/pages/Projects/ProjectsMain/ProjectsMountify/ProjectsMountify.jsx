@@ -1,5 +1,6 @@
 import { useSelector } from 'react-redux';
 
+import ProjectsDates from '../ProjectsDates/ProjectsDates';
 import ProjectsAim from '../ProjectsAim/ProjectsAim';
 import ProjectsContext from '../ProjectsContext/ProjectsContext';
 import ProjectsFeatures from '../ProjectsFeatures/ProjectsFeatures';
@@ -35,6 +36,7 @@ const ProjectsMountify = () => {
         alt="Mountify logo"
         id="mountify"
       />
+      <ProjectsDates from="2024-06-17" to="..." />
       <ProjectsAim
         text={
           language === 'en'

@@ -1,5 +1,6 @@
 import { useSelector } from 'react-redux';
 
+import ProjectsDates from '../ProjectsDates/ProjectsDates';
 import ProjectsAim from '../ProjectsAim/ProjectsAim';
 import ProjectsContext from '../ProjectsContext/ProjectsContext';
 import ProjectsFeatures from '../ProjectsFeatures/ProjectsFeatures';
@@ -33,6 +34,7 @@ const ProjectsWepeak = () => {
         alt="Wepeak logo"
         id="wepeak"
       />
+      <ProjectsDates from="2024-03-25" to="2024-04-21" />
       <ProjectsAim
         text={
           language === 'en'

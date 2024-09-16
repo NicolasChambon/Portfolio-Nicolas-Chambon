@@ -1,5 +1,6 @@
 import { useSelector } from 'react-redux';
 
+import ProjectsDates from '../ProjectsDates/ProjectsDates';
 import ProjectsAim from '../ProjectsAim/ProjectsAim';
 import ProjectsStack from '../ProjectsStack/ProjectsStack';
 import ProjectsLinks from '../ProjectsLinks/ProjectsLinks';
@@ -8,7 +9,7 @@ import reactIcon from '../../../../../assets/icons/react-icon.svg';
 import sassIcon from '../../../../../assets/icons/sass-icon.svg';
 
 import githubIcon from '../../../../../assets/icons/github-icon.svg';
-import vercelIcon from '../../../../../assets/icons/vercel-icon.svg';
+import websiteIcon from '../../../../../assets/icons/website-icon.svg';
 
 import portfolioFullLogo from '../../../../../assets/logos/portfolio-projects-full-logo.svg';
 
@@ -25,6 +26,7 @@ const ProjectsPortfolio = () => {
         alt="Portfolio logo"
         id="portfolio"
       />
+      <ProjectsDates from="2024-08-04" to="2024-08-08" />
       <ProjectsAim
         text={
           language === 'en'
@@ -42,14 +44,14 @@ const ProjectsPortfolio = () => {
       <ProjectsLinks
         links={[
           {
-            name: 'Front-end GitHub repository',
+            name: 'GitHub repository',
             url: 'https://github.com/NicolasChambon/Portfolio-Nicolas-Chambon',
             icon: githubIcon,
           },
           {
-            name: 'Front-end deployment',
+            name: 'WebSite',
             url: 'https://nicolaschambondev.vercel.app/',
-            icon: vercelIcon,
+            icon: websiteIcon,
           },
         ]}
       />
