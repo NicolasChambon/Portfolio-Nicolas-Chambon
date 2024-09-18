@@ -33,7 +33,7 @@ const ProjectsNoita = () => {
       <img
         className="ProjectsNoita-logo"
         src={noitaFullLogo}
-        alt="Wepeak logo"
+        alt="Noita logo"
         id="noita"
       />
       <ProjectsDates from="2024-09-02" to="2024-09-16" />

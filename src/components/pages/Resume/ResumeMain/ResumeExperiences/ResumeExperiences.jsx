@@ -22,6 +22,28 @@ const ResumeExperiences = () => {
       <div className="ResumeExperiences-item">
         <p className="ResumeExperiences-item-job">
           {language === 'en'
+            ? 'Fullstack Web Developer Freelancer'
+            : 'Développeur Web Fullstack en freelance'}
+        </p>
+        <div className="ResumeExperiences-item-whereWhen">
+          <p className="ResumeExperiences-item-whereWhen-where">
+            {language === 'en' ? 'Remote' : 'À distance'}
+          </p>
+          <p className="ResumeExperiences-item-whereWhen-when">
+            {language === 'en' ? 'Aug. 24 - ...' : 'août 24 - ...'}
+          </p>
+        </div>
+        <ul className="ResumeExperiences-item-description">
+          <li className="ResumeExperiences-item-description-li">
+            {language === 'en'
+              ? '- Development of web applications and websites'
+              : '- Développement d’applications web et de sites internet'}
+          </li>
+        </ul>
+      </div>
+      <div className="ResumeExperiences-item">
+        <p className="ResumeExperiences-item-job">
+          {language === 'en'
             ? 'Leader in mountain hiking footwear design'
             : 'Leader en conception de chaussures de randonnée en montagne'}
         </p>

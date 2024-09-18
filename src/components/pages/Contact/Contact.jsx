@@ -8,6 +8,8 @@ import { FaGithub } from 'react-icons/fa';
 import { FaStrava } from 'react-icons/fa';
 import { FiExternalLink } from 'react-icons/fi';
 
+import maltIcon from '../../../assets/icons/malt-icon.svg';
+
 import './Contact.scss';
 
 const Contact = () => {
@@ -65,6 +67,23 @@ const Contact = () => {
               <FaGithub className="Contact-wrapper-items-item-link-icon" />
               <p className="Contact-wrapper-items-item-link-text">
                 github.com/NicolasChambon
+              </p>
+              <FiExternalLink className="Contact-wrapper-items-item-link-iconLink" />
+            </a>
+          </li>
+          <li className="Contact-wrapper-items-item">
+            <a
+              className="Contact-wrapper-items-item-link"
+              href="https://www.malt.fr/profile/nicolaschambon1"
+              target="_blank"
+            >
+              <img
+                src={maltIcon}
+                alt="Malt"
+                className="Contact-wrapper-items-item-link-icon"
+              />
+              <p className="Contact-wrapper-items-item-link-text">
+                malt.fr/profile/nicolaschambon1
               </p>
               <FiExternalLink className="Contact-wrapper-items-item-link-iconLink" />
             </a>
