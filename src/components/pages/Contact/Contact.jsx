@@ -35,7 +35,7 @@ const Contact = () => {
           <li className="Contact-wrapper-items-item">
             <a
               className="Contact-wrapper-items-item-link"
-              href="mailto:nico.chambon@gmail.com"
+              href="mailto:nicolas.chambon.dev@gmail.com"
               target="_blank"
             >
               <MdEmail className="Contact-wrapper-items-item-link-icon" />
