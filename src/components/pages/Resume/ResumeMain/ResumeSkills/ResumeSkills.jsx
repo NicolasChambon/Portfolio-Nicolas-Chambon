@@ -9,6 +9,7 @@ import { FaNodeJs } from 'react-icons/fa6';
 import { SiPhp } from 'react-icons/si';
 import { BiLogoPostgresql } from 'react-icons/bi';
 
+import { BiLogoTypescript } from 'react-icons/bi';
 import { FaGitAlt } from 'react-icons/fa6';
 import { DiScrum } from 'react-icons/di';
 import Matlab from '../../../../../assets/icons/matlab-icon.svg';
@@ -98,6 +99,14 @@ const ResumeSkills = () => {
           <p className="ResumeSkills-items-item-category">
             {language === 'en' ? 'Other' : 'Autres'}
           </p>
+
+          <div className="ResumeSkills-items-item-category-element">
+            <BiLogoTypescript className="ResumeSkills-items-item-category-element-icon" />
+            <p className="ResumeSkills-items-item-category-element-text">
+              TypeScript
+            </p>
+          </div>
+
           <div className="ResumeSkills-items-item-category-element">
             <FaGitAlt className="ResumeSkills-items-item-category-element-icon" />
             <p className="ResumeSkills-items-item-category-element-text">Git</p>
