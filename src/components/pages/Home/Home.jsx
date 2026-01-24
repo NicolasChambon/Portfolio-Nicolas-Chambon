@@ -33,8 +33,8 @@ const Home = () => {
       </p>
       <p className="Home-description">
         {language === 'en'
-          ? 'My name is Nicolas Chambon, I am 37, and I am a passionate Fullstack Web Developer with a unique background in sport biomechanics and product engineering. After 15 years at Decathlon as a biomechanics and sports product expert, I transitioned into web development to take on new challenges and create impactful digital solutions.'
-          : "Je m'appelle Nicolas Chambon, j'ai 37 ans, et je suis un développeur web fullstack passionné avec un parcours unique en biomécanique du sport et en ingénierie des produits. Après 15 ans chez Decathlon en tant qu'expert en biomécanique et produits sportifs, j'ai fait la transition vers le développement web pour relever de nouveaux défis et créer des solutions numériques impactantes."}
+          ? 'My name is Nicolas Chambon, I am 38, and I am a passionate Fullstack Web Developer with a unique background in sport biomechanics and product engineering. After 15 years at Decathlon as a biomechanics and sports product expert, I transitioned into web development to take on new challenges and create impactful digital solutions.'
+          : "Je m'appelle Nicolas Chambon, j'ai 38 ans, et je suis un développeur web fullstack passionné avec un parcours unique en biomécanique du sport et en ingénierie des produits. Après 15 ans chez Decathlon en tant qu'expert en biomécanique et produits sportifs, j'ai fait la transition vers le développement web pour relever de nouveaux défis et créer des solutions numériques impactantes."}
       </p>
       <p className="Home-description">
         {language === 'en'
