@@ -33,23 +33,23 @@ const Home = () => {
       </p>
       <p className="Home-description">
         {language === 'en'
-          ? 'My name is Nicolas Chambon, I am 37 and I am a passionate Fullstack Web Developer with a unique background in sport biomechanics and product engineering. Today, I bring a diverse skill set and a dedication to creating innovative and efficient web solutions.'
-          : "Je m'appelle Nicolas Chambon, j'ai 37 ans et je suis un développeur web Fullstack passionné avec une expérience unique en biomécanique sportive et en ingénierie produit. Aujourd'hui, je mets en avant un ensemble de compétences diverses et un dévouement à la création de solutions web innovantes et efficaces."}
+          ? 'My name is Nicolas Chambon, I am 37, and I am a passionate Fullstack Web Developer with a unique background in sport biomechanics and product engineering. After 15 years at Decathlon as a biomechanics and sports product expert, I transitioned into web development to take on new challenges and create impactful digital solutions.'
+          : "Je m'appelle Nicolas Chambon, j'ai 37 ans, et je suis un développeur web fullstack passionné avec un parcours unique en biomécanique du sport et en ingénierie des produits. Après 15 ans chez Decathlon en tant qu'expert en biomécanique et produits sportifs, j'ai fait la transition vers le développement web pour relever de nouveaux défis et créer des solutions numériques impactantes."}
       </p>
       <p className="Home-description">
         {language === 'en'
-          ? 'I have a strong foundation in front-end technologies like React.js and back-end frameworks such as Express with Node.js, and I am always eager to learn and adapt to new challenges.'
-          : "Je possède une solide base en technologies front-end comme React.js et en frameworks back-end tels qu'Express avec Node.js, et je suis toujours désireux d'apprendre et de m'adapter à de nouveaux défis."}
+          ? 'Since February 2025, I have been working at Didask as a work-study developer, gaining hands-on experience in TypeScript, React.js, Next.js, Node.js/Express, and API design, while contributing to real-world projects and refining my skills in modern web development practices.'
+          : "Depuis février 2025, je travaille chez Didask en tant que développeur en alternance, acquérant une expérience pratique en TypeScript, React.js, Next.js, Node.js/Express et conception d'API, tout en contribuant à des projets réels et en affinant mes compétences dans les pratiques modernes de développement web."}
       </p>
       <p className="Home-description">
         {language === 'en'
-          ? 'This portfolio is a showcase of my journey and achievements in web development. Here, you will find my detailed CV, highlighting my technical skills. You can also explore a collection of my projects, each accompanied by a brief description, demonstration videos, and links to live sites and/or GitHub repositories.'
-          : "Ce portfolio est une vitrine de mon parcours et de mes réalisations en développement web. Vous y trouverez mon CV détaillé, mettant en avant mes compétences techniques. Vous pouvez également explorer une collection de mes projets, chacun accompagné d'une brève description, de vidéos de démonstration et de liens vers des sites en ligne et/ou des dépôts GitHub."}
+          ? 'This portfolio showcases my journey, skills, and achievements in web development. Here, you will find my detailed CV, a selection of projects with demos and links to live sites or GitHub repositories, illustrating my ability to build efficient and innovative web solutions.'
+          : 'Ce portfolio présente mon parcours, mes compétences et mes réalisations en développement web. Vous y trouverez mon CV détaillé, une sélection de projets avec des démos et des liens vers des sites en ligne ou des dépôts GitHub, illustrant ma capacité à créer des solutions web efficaces et innovantes.'}
       </p>
       <p className="Home-description">
         {language === 'en'
-          ? 'Feel free to reach out to me if you have any questions or if you are interested in collaborating on exciting web development projects. Thank you for visiting, and I hope you enjoy browsing through my work !'
-          : "N'hésitez pas à me contacter si vous avez des questions ou si vous êtes intéressé par une collaboration sur des projets de développement web passionnants. Merci de votre visite, et j'espère que vous apprécierez la consultation de mon travail !"}
+          ? 'Feel free to reach out if you have any questions or would like to collaborate on exciting projects. Thank you for visiting, and enjoy exploring my work!'
+          : "N'hésitez pas à me contacter si vous avez des questions ou si vous souhaitez collaborer sur des projets passionnants. Merci de votre visite et bonne exploration de mon travail !"}
       </p>
       <p className="Home-description last">Nicolas Chambon</p>
     </main>
