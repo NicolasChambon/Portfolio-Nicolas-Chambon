@@ -22,6 +22,43 @@ const ResumeExperiences = () => {
       <div className="ResumeExperiences-item">
         <p className="ResumeExperiences-item-job">
           {language === 'en'
+            ? 'Fullstack Web Developer'
+            : 'Développeur Web Fullstack'}
+        </p>
+        <div className="ResumeExperiences-item-whereWhen">
+          <p className="ResumeExperiences-item-whereWhen-where">
+            {language === 'en' ? 'Remote/Paris' : 'À distance/Paris'}
+          </p>
+          <p className="ResumeExperiences-item-whereWhen-when">
+            {language === 'en' ? 'Feb. 25 - ...' : 'fév. 25 - ...'}
+          </p>
+        </div>
+        <ul className="ResumeExperiences-item-description">
+          <li className="ResumeExperiences-item-description-li">
+            {language === 'en'
+              ? '- Building features in a large-scale edtech platform'
+              : '- Développement de fonctionnalités dans une plateforme edtech à grande échelle'}
+          </li>
+          <li className="ResumeExperiences-item-description-li">
+            {language === 'en'
+              ? '- Technical owner on specific projects'
+              : '- Responsable technique sur des projets spécifiques'}
+          </li>
+          <li className="ResumeExperiences-item-description-li">
+            {language === 'en'
+              ? '- Rotating support duties, diagnosing & fixing production issues'
+              : '- Tâches de support en rotation, diagnostic et résolution des problèmes de production'}
+          </li>
+          <li className="ResumeExperiences-item-description-li">
+            {language === 'en'
+              ? '- Collaborating with product managers & designers'
+              : '- Collaboration avec les chefs de produit et les designers'}
+          </li>
+        </ul>
+      </div>
+      <div className="ResumeExperiences-item">
+        <p className="ResumeExperiences-item-job">
+          {language === 'en'
             ? 'Fullstack Web Developer Freelancer'
             : 'Développeur Web Fullstack en freelance'}
         </p>
@@ -30,7 +67,7 @@ const ResumeExperiences = () => {
             {language === 'en' ? 'Remote' : 'À distance'}
           </p>
           <p className="ResumeExperiences-item-whereWhen-when">
-            {language === 'en' ? 'Aug. 24 - ...' : 'août 24 - ...'}
+            {language === 'en' ? 'Aug. 24 - Dec.24' : 'août 24 - déc. 24'}
           </p>
         </div>
         <ul className="ResumeExperiences-item-description">

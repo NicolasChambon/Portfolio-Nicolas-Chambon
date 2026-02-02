@@ -22,6 +22,38 @@ const ResumeTraining = () => {
       <div className="ResumeTraining-item">
         <p className="ResumeTraining-item-diploma">
           {language === 'en'
+            ? 'Professional qualification - Application Designer & Developer (Bac +4)'
+            : "Titre professionnel - Concepteur Développeur d'Applications (Bac +4)"}
+        </p>
+        <div className="ResumeTraining-item-whereWhen">
+          <p className="ResumeTraining-item-whereWhen-where">
+            {language === 'en' ? 'Wild Code School' : 'Wild Code School'}
+          </p>
+          <p className="ResumeTraining-item-whereWhen-when">
+            {language === 'en' ? 'Mar. 25 - May 26' : 'Mar. 25 - mai 26'}
+          </p>
+        </div>
+        <ul className="ResumeTraining-item-description">
+          <li className="ResumeTraining-item-description-li">
+            {language === 'en'
+              ? '- Software architecture & application design'
+              : "- Architecture logicielle & conception d'applications"}
+          </li>
+          <li className="ResumeTraining-item-description-li">
+            {language === 'en'
+              ? '- CI/CD pipelines, automated testing'
+              : '- CI/CD, tests automatisés'}
+          </li>
+          <li className="ResumeTraining-item-description-li">
+            {language === 'en'
+              ? '- Containerization (Docker) and deployment workflows'
+              : '- Containerisation (Docker) et workflows de déploiement'}
+          </li>
+        </ul>
+      </div>
+      <div className="ResumeTraining-item">
+        <p className="ResumeTraining-item-diploma">
+          {language === 'en'
             ? 'Professional qualification - Web and Mobile Web Developer (Bac +2)'
             : 'Titre professionnel - Développeur Web et Web Mobile (Bac +2)'}
         </p>
